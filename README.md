@@ -14,6 +14,15 @@ French), a protoboard bring-up stage, and a re-spin that is the current 4-layer
 main board. As of 2026-11-01 the re-spin is designed and priced but, per the
 punch list below, still unfinished in places.
 
+![ProEQ panel, overall](docs/img/proeq_panel_overall.jpg)
+
+![ProEQ panel, top view](docs/img/proeq_top_view.jpg)
+
+*Render of the panel as designed, not of a finished build: 5 bands × (gain,
+bandwidth, frequency) with LED rings, the band on/off keyswitches, the two
+11-position rotaries and the 16×2 LCD. The second image is the top view of the
+same assembly.*
+
 *Hardware licence: CERN-OHL-W-2.0 ([`LICENSE`](LICENSE)). Firmware licence: MIT
 ([`firmware/LICENSE`](firmware/LICENSE)).*
 

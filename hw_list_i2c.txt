@@ -1,0 +1,697 @@
+ProEQ project documentation :
+- 1 Arduino
+- 2 11 poles 1 throw rotary switch
+- 2 IS31FL3743A I2C Led drivers
+- 270 LEDs
+- 10 MCP23s017 SPI expander
+- 18 ACE absolute encoder
+- 15 mechnical switch
+- 1 LCD screen 16x02
+
+For I2C part :
+
+17 ACE encoder have a 14leds ring around (one, the 1st encoder have no ring attached to it)
+Each mechanical switch have 2 leds behind (transparent switch)
+The Vumeter is 32 leds (2 x 16 leds - Left and right)
+
+Global connections of the project :
+Arduino <-I2C-> IS31FL3743A (x2) -PWM-> LEDS (x270 + switch LEDs)
+
+Arduino Ports :
+A4 = SDA
+A5 = SCL
+
+IS31FL3743A Use :
+IS_1_Address = 0x20
+IS_2_Adrress = 0x23
+
+Overall PCB connections :
+IS1 drive leds D1 to D198
+IS2 drive leds D199 to D270 + 15 leds x 2 (2 leds per mechanical switchs)
+
+
+The 14 leds per ring for 17 absolute encoders (1st encoder have no ring):
+Mapping as follow :
+D33 is 1st led of ring encoder 2 IS1 LED 33 -> PWM register 0x21
+D47 is 1st led of ring of encoder 3 IS1 LED 47 -> PWM register 0x2F
+And so on.
+ 
+Encoder 2 ring 1 (D33 to D46)
+Encoder 3 ring 2
+Encoder 6 ring 3
+Encoder 5 ring 4
+Encoder 4 ring 5
+Encoder 7 ring 6
+Encoder 9 ring 7
+Encoder 8 ring 8
+Encoder 12 ring 9
+Encoder 11 ring 10
+Encoder 10 ring 11
+Encoder 13 ring 12 (end of IS1 at D198)
+Encoder 13 ring 12 (IS2 D199 - only 2 led from this ring is IS2 starting from SW1/CS1, so the 12 first LEDS are IS1)
+Encoder 15 ring 13
+Encoder 14 ring 14
+Encoder 18 ring 15
+Encoder 17 ring 16
+Encoder 16 ring 18
+
+**Exception** The ring 12 (encoder 13) is separated between driver 1 up to led 198 (the first 12 leds of the ring) and driver 2 (the 2 other led to have 14 led ring) led 1 (starting again at 0X01 - first led -but driver 2 - different address).
+
+
+  Mech. switch 1 = D17. 0x11 - CS17 / SW1 & D196. 0xC4 - CS16 / SW11
+  Mech. switch 2 = D16. 0x10 - CS16 / SW1 & D178. 0xB2 - CS16 / SW10
+  Mech. switch 3 = D35. 0x23 - CS17 / SW2 & D53. 0x35 - CS17 / SW3
+  Mech. switch 4 = D70. 0x46 - CS16 / SW4 & D52. 0x34 - CS16 / SW3
+  Mech. switch 5 = D89. 0x59 - CS17 / SW5 & D71. 0x47 - CS17 / SW4
+  Mech. switch 6 = D88. 0x58 - CS16 / SW5 & D106. 0x6A - CS16 / SW6
+  Mech. switch 7 = D125. 0x7D - CS17 / SW7 & D107. 0x6B - CS17 / SW6
+  Mech. switch 8 = D124. 0x7C - CS16 / SW7 & D142. 0x8E - CS16 / SW8
+  Mech. switch 9 = D161. 0xA1 - CS17 / SW9 & D143. 0x8F - CS17 / SW8
+  Mech. switch 10 = D160. 0xA0 - CS16 / SW9 & D178. 0xB2 - CS16 / SW10
+  Mech. switch 11 = D179. 0xB3 - CS17 / SW10 & D197. 0xC5 - CS17 / SW11
+  Mech. switch 12 = D18. 0x12 - CS18 / SW1 & D36. 0x24 - CS18 / SW2
+  Mech. switch 13 = D54. 0x36 - CS18 / SW3 & D72. 0x48 - CS18 / SW4
+  Mech. switch 14 = D90. 0x5A - CS18 / SW5 & D108. 0x6C - CS18 / SW6
+  Mech. switch 15 = D126. 0x7E - CS18 / SW7 & D144. 0x90 - CS18 / SW8
+
+
+Here is the complete mapping from LED 1 to LED 198:
+
+  1. 0x01 - CS01 / SW1
+  2. 0x02 - CS02 / SW1
+  3. 0x03 - CS03 / SW1
+  4. 0x04 - CS04 / SW1
+  5. 0x05 - CS05 / SW1
+  6. 0x06 - CS06 / SW1
+  7. 0x07 - CS07 / SW1
+  8. 0x08 - CS08 / SW1
+  9. 0x09 - CS09 / SW1
+  10. 0x0A - CS10 / SW1
+  11. 0x0B - CS11 / SW1
+  12. 0x0C - CS12 / SW1
+  13. 0x0D - CS13 / SW1
+  14. 0x0E - CS14 / SW1
+  15. 0x0F - CS15 / SW1
+  16. 0x10 - CS16 / SW1
+  17. 0x11 - CS17 / SW1
+  18. 0x12 - CS18 / SW1
+  19. 0x13 - CS01 / SW2
+  20. 0x14 - CS02 / SW2
+  21. 0x15 - CS03 / SW2
+  22. 0x16 - CS04 / SW2
+  23. 0x17 - CS05 / SW2
+  24. 0x18 - CS06 / SW2
+  25. 0x19 - CS07 / SW2
+  26. 0x1A - CS08 / SW2
+  27. 0x1B - CS09 / SW2
+  28. 0x1C - CS10 / SW2
+  29. 0x1D - CS11 / SW2
+  30. 0x1E - CS12 / SW2
+  31. 0x1F - CS13 / SW2
+  32. 0x20 - CS14 / SW2
+  33. 0x21 - CS15 / SW2
+  34. 0x22 - CS16 / SW2
+  35. 0x23 - CS17 / SW2
+  36. 0x24 - CS18 / SW2
+  37. 0x25 - CS01 / SW3
+  38. 0x26 - CS02 / SW3
+  39. 0x27 - CS03 / SW3
+  40. 0x28 - CS04 / SW3
+  41. 0x29 - CS05 / SW3
+  42. 0x2A - CS06 / SW3
+  43. 0x2B - CS07 / SW3
+  44. 0x2C - CS08 / SW3
+  45. 0x2D - CS09 / SW3
+  46. 0x2E - CS10 / SW3
+  47. 0x2F - CS11 / SW3
+  48. 0x30 - CS12 / SW3
+  49. 0x31 - CS13 / SW3
+  50. 0x32 - CS14 / SW3
+  51. 0x33 - CS15 / SW3
+  52. 0x34 - CS16 / SW3
+  53. 0x35 - CS17 / SW3
+  54. 0x36 - CS18 / SW3
+  55. 0x37 - CS01 / SW4
+  56. 0x38 - CS02 / SW4
+  57. 0x39 - CS03 / SW4
+  58. 0x3A - CS04 / SW4
+  59. 0x3B - CS05 / SW4
+  60. 0x3C - CS06 / SW4
+  61. 0x3D - CS07 / SW4
+  62. 0x3E - CS08 / SW4
+  63. 0x3F - CS09 / SW4
+  64. 0x40 - CS10 / SW4
+  65. 0x41 - CS11 / SW4
+  66. 0x42 - CS12 / SW4
+  67. 0x43 - CS13 / SW4
+  68. 0x44 - CS14 / SW4
+  69. 0x45 - CS15 / SW4
+  70. 0x46 - CS16 / SW4
+  71. 0x47 - CS17 / SW4
+  72. 0x48 - CS18 / SW4
+  73. 0x49 - CS01 / SW5
+  74. 0x4A - CS02 / SW5
+  75. 0x4B - CS03 / SW5
+  76. 0x4C - CS04 / SW5
+  77. 0x4D - CS05 / SW5
+  78. 0x4E - CS06 / SW5
+  79. 0x4F - CS07 / SW5
+  80. 0x50 - CS08 / SW5
+  81. 0x51 - CS09 / SW5
+  82. 0x52 - CS10 / SW5
+  83. 0x53 - CS11 / SW5
+  84. 0x54 - CS12 / SW5
+  85. 0x55 - CS13 / SW5
+  86. 0x56 - CS14 / SW5
+  87. 0x57 - CS15 / SW5
+  88. 0x58 - CS16 / SW5
+  89. 0x59 - CS17 / SW5
+  90. 0x5A - CS18 / SW5
+  91. 0x5B - CS01 / SW6
+  92. 0x5C - CS02 / SW6
+  93. 0x5D - CS03 / SW6
+  94. 0x5E - CS04 / SW6
+  95. 0x5F - CS05 / SW6
+  96. 0x60 - CS06 / SW6
+  97. 0x61 - CS07 / SW6
+  98. 0x62 - CS08 / SW6
+  99. 0x63 - CS09 / SW6
+  100. 0x64 - CS10 / SW6
+  101. 0x65 - CS11 / SW6
+  102. 0x66 - CS12 / SW6
+  103. 0x67 - CS13 / SW6
+  104. 0x68 - CS14 / SW6
+  105. 0x69 - CS15 / SW6
+  106. 0x6A - CS16 / SW6
+  107. 0x6B - CS17 / SW6
+  108. 0x6C - CS18 / SW6
+  109. 0x6D - CS01 / SW7
+  110. 0x6E - CS02 / SW7
+  111. 0x6F - CS03 / SW7
+  112. 0x70 - CS04 / SW7
+  113. 0x71 - CS05 / SW7
+  114. 0x72 - CS06 / SW7
+  115. 0x73 - CS07 / SW7
+  116. 0x74 - CS08 / SW7
+  117. 0x75 - CS09 / SW7
+  118. 0x76 - CS10 / SW7
+  119. 0x77 - CS11 / SW7
+  120. 0x78 - CS12 / SW7
+  121. 0x79 - CS13 / SW7
+  122. 0x7A - CS14 / SW7
+  123. 0x7B - CS15 / SW7
+  124. 0x7C - CS16 / SW7
+  125. 0x7D - CS17 / SW7
+  126. 0x7E - CS18 / SW7
+  127. 0x7F - CS01 / SW8
+  128. 0x80 - CS02 / SW8
+  129. 0x81 - CS03 / SW8
+  130. 0x82 - CS04 / SW8
+  131. 0x83 - CS05 / SW8
+  132. 0x84 - CS06 / SW8
+  133. 0x85 - CS07 / SW8
+  134. 0x86 - CS08 / SW8
+  135. 0x87 - CS09 / SW8
+  136. 0x88 - CS10 / SW8
+  137. 0x89 - CS11 / SW8
+  138. 0x8A - CS12 / SW8
+  139. 0x8B - CS13 / SW8
+  140. 0x8C - CS14 / SW8
+  141. 0x8D - CS15 / SW8
+  142. 0x8E - CS16 / SW8
+  143. 0x8F - CS17 / SW8
+  144. 0x90 - CS18 / SW8
+  145. 0x91 - CS01 / SW9
+  146. 0x92 - CS02 / SW9
+  147. 0x93 - CS03 / SW9
+  148. 0x94 - CS04 / SW9
+  149. 0x95 - CS05 / SW9
+  150. 0x96 - CS06 / SW9
+  151. 0x97 - CS07 / SW9
+  152. 0x98 - CS08 / SW9
+  153. 0x99 - CS09 / SW9
+  154. 0x9A - CS10 / SW9
+  155. 0x9B - CS11 / SW9
+  156. 0x9C - CS12 / SW9
+  157. 0x9D - CS13 / SW9
+  158. 0x9E - CS14 / SW9
+  159. 0x9F - CS15 / SW9
+  160. 0xA0 - CS16 / SW9
+  161. 0xA1 - CS17 / SW9
+  162. 0xA2 - CS18 / SW9
+  163. 0xA3 - CS01 / SW10
+  164. 0xA4 - CS02 / SW10
+  165. 0xA5 - CS03 / SW10
+  166. 0xA6 - CS04 / SW10
+  167. 0xA7 - CS05 / SW10
+  168. 0xA8 - CS06 / SW10
+  169. 0xA9 - CS07 / SW10
+  170. 0xAA - CS08 / SW10
+  171. 0xAB - CS09 / SW10
+  172. 0xAC - CS10 / SW10
+  173. 0xAD - CS11 / SW10
+  174. 0xAE - CS12 / SW10
+  175. 0xAF - CS13 / SW10
+  176. 0xB0 - CS14 / SW10
+  177. 0xB1 - CS15 / SW10
+  178. 0xB2 - CS16 / SW10
+  179. 0xB3 - CS17 / SW10
+  180. 0xB4 - CS18 / SW10
+  181. 0xB5 - CS01 / SW11
+  182. 0xB6 - CS02 / SW11
+  183. 0xB7 - CS03 / SW11
+  184. 0xB8 - CS04 / SW11
+  185. 0xB9 - CS05 / SW11
+  186. 0xBA - CS06 / SW11
+  187. 0xBB - CS07 / SW11
+  188. 0xBC - CS08 / SW11
+  189. 0xBD - CS09 / SW11
+  190. 0xBE - CS10 / SW11
+  191. 0xBF - CS11 / SW11
+  192. 0xC0 - CS12 / SW11
+  193. 0xC1 - CS13 / SW11
+  194. 0xC2 - CS14 / SW11
+  195. 0xC3 - CS15 / SW11
+  196. 0xC4 - CS16 / SW11
+  197. 0xC5 - CS17 / SW11
+  198. 0xC6 - CS18 / SW11
+
+->   The programm is good and working great. The mapping is handled. The thing is, I missed the part of the switch led address./ (only in IS2).
+The leds of the mapping encoder / ring number is good, but it does not take into account the mech switch led list.
+For example if ring X goes from D10 to D25; inside there is the D17 which is mapped to a mechanical switch, 
+so the overall mapping gets modified. I am searching for a way to make exception for the mechanical switch led addresses, so the ring mapping is correct.
+
+
+CPP file :
+#include "IS_functions.h"
+
+// External declarations
+extern const uint8_t mechSwitchAddress[33];
+extern EncoderRing encoderRings[NUM_ENCODERS];
+extern SwitchLEDs switchLEDs[NUM_SWITCHES];
+extern const uint8_t encoderToRingMap[NUM_ENCODERS];
+
+const uint8_t mechSwitchAddress[33] = {0x10, 0x11, 0x12, 0x22, 0x23, 0x24,
+                                       0x34, 0x35, 0x36, 0x46,
+                                       0x47, 0x48, 0x58, 0x59, 0x5A, 0x6A,
+                                       0x6B, 0x6C, 0x7C, 0x7D, 0x7E, 0x8E, 0x8F, 0x90, 0xA0, 0xA1, 0xA2, 0xB2, 0xB3,
+                                       0xB4, 0xC4, 0xC5, 0xC6
+                                      };
+
+// Encoder number to ring number mapping (encoder number -> ring number)
+// Encoder 1 has no ring (index 0)
+const uint8_t encoderToRingMap[NUM_ENCODERS] =
+{
+  0,   // Encoder 1 -> no ring
+  1,   // Encoder 2 -> ring 1
+  2,   // Encoder 3 -> ring 2
+  5,   // Encoder 4 -> ring 5
+  4,   // Encoder 5 -> ring 4
+  3,   // Encoder 6 -> ring 3
+  6,   // Encoder 7 -> ring 6
+  8,   // Encoder 8 -> ring 8
+  7,   // Encoder 9 -> ring 7
+  11,  // Encoder 10 -> ring 11
+  10,  // Encoder 11 -> ring 10
+  9,   // Encoder 12 -> ring 9
+  12,  // Encoder 13 -> ring 12 (split between drivers)
+  14,  // Encoder 14 -> ring 14
+  13,  // Encoder 15 -> ring 13
+  18,  // Encoder 16 -> ring 18
+  16,  // Encoder 17 -> ring 16
+  15   // Encoder 18 -> ring 15
+};
+// Ring mapping for IS dirver and led number
+EncoderRing encoderRings[NUM_ENCODERS] =
+{
+  {0, 0}, // Ring 0  -> for encoder 1, no rings attached
+  {33, 0}, // Ring 1
+  {47, 0}, // Ring 2
+  {61, 0},  // Ring 3
+  {75, 0},  // Ring 4
+  {89, 0},  // Ring 5
+  {103, 0},  // Ring 6
+  {117, 0},  // Ring 7
+  {131, 0},  // Ring 8
+  {145, 0},  // Ring 9
+  {159, 0},  // Ring 10
+  {173, 0},  // Ring 11
+  {187, 0},  // Ring 12
+  {3, 1},   // Ring 13
+  {17, 1},  // Ring 14
+  {31, 1},  // Ring 15
+  {45, 1},  // Ring 16
+  {59, 1}   // Ring 17
+};
+
+SwitchLEDs switchLEDs[NUM_SWITCHES] =
+{
+  {0x11, 0xC0}, // Switch 1: SW1/CS17 & SW11/CS16
+  {0x10, 0x24}, // Switch 2: SW1/CS16 & SW2/CS16
+  {0x23, 0x35}, // Switch 3: SW2/CS17 & SW3/CS17
+  {0x34, 0x22}, // Switch 4: SW4/CS16 & SW3/CS16
+  {0x47, 0x46}, // Switch 5: SW5/CS17 & SW4/CS17
+  {0x46, 0x58}, // Switch 6: SW5/CS16 & SW6/CS16
+  {0x6B, 0x6A}, // Switch 7: SW7/CS17 & SW6/CS17
+  {0x6A, 0x7C}, // Switch 8: SW7/CS16 & SW8/CS16
+  {0x8F, 0x8E}, // Switch 9: SW9/CS17 & SW8/CS17
+  {0x8E, 0xA0}, // Switch 10: SW10/CS16 & SW9/CS16
+  {0xA1, 0xB3}, // Switch 11: SW10/CS17 & SW11/CS17
+  {0x12, 0x36}, // Switch 12: SW1/CS18 & SW2/CS18
+  {0x48, 0x5A}, // Switch 13: SW3/CS18 & SW4/CS18
+  {0x6C, 0x7E}, // Switch 14: SW5/CS18 & SW6/CS18
+  {0x90, 0xA2}  // Switch 15: SW7/CS18 & SW8/CS18
+};
+
+void initIS(byte address)
+{
+  selectPage(address, FUNCTION_REG);
+
+  Wire.beginTransmission(address); // transmit to device 0x20
+  Wire.write(0x01);        // GCC
+  Wire.write(0xFF);        // set I max
+  Wire.endTransmission();    // stop transmitting
+
+  Wire.beginTransmission(address); // transmit to device 0x20
+  Wire.write(0x02);        // pull up
+  Wire.write(0x00);        // 8k pull down on SWx when off
+  Wire.endTransmission();    // stop transmitting
+
+  Wire.beginTransmission(address); // transmit to device 0x20
+  Wire.write(0x00);        // configuration register
+  Wire.write(0x01);        // dtasheet page 14
+  Wire.endTransmission();    // stop transmitting
+
+  selectPage(address, PWM_REG);
+
+  for (int i = 1; i < 0xC7; i++)
+  {
+    setValue(address, i, 0x00);
+  }
+
+  selectPage(address, SCALLING_REG);
+
+  for (int i = 1; i < 0xC7; i++)
+  {
+    setValue(address, i, 0xFF);
+  }
+}
+
+void initScalling(byte address)
+{
+  selectPage(address, SCALLING_REG);
+
+  // Dimming of dot led
+  for (int i = 1; i < 0xC7; i++)
+  {
+    setValue(address, i, DOT_DIM);
+  }
+  // Dimming of matias (starting from SW_1 / CS_16, only for IS 2)
+  if (address == IS_2_ADDR)
+  {
+    for (int i = 0; i < 33; i++)
+    {
+      setValue(address, mechSwitchAddress[i], MATIAS_DIM); //scalling 0xff for mach switchs
+    }
+  }
+  selectPage(address, PWM_REG); // Now back to PWM for main functions
+}
+
+void selectPage(uint8_t address, uint8_t page)
+{
+  Wire.beginTransmission(address); // transmit to device 0x20
+  Wire.write(0xFE);        // enable master pointer
+  Wire.write(0xC5);        // code to enable
+  Wire.endTransmission();    // stop transmitting
+
+  Wire.beginTransmission(address); // transmit to device 0x20
+  Wire.write(0xFD);        // control master register pointer
+  Wire.write(page);        // scaling
+  Wire.endTransmission();    // stop transmitting
+}
+
+// Set value for a specific LED
+void setValue(byte address, byte led, byte value)
+{
+  // Write to the register
+  Wire.beginTransmission(address);
+  Wire.write(led);
+  Wire.write(value);
+  Wire.endTransmission();
+}
+
+
+// Set VU meter value
+void setVumeter(VUSide side, uint16_t value)
+{
+  // Clamp value
+  if (value > VU_MAX_VALUE) value = VU_MAX_VALUE;
+
+  // Calculate how many LEDs should be fully on
+  uint8_t fullLeds = value / 255;
+
+  // Calculate PWM for the partially lit LED
+  uint8_t partialPWM = value % 255;
+
+  // VU meter LED mapping
+  // Left: D1, D3, D5, ..., D31 (odd numbers starting from 1)
+  // Right: D2, D4, D6, ..., D32 (even numbers starting from 2)
+
+  for (uint8_t i = 0; i < VU_LEDS_PER_SIDE; i++)
+  {
+    uint8_t ledNumber;
+    uint8_t pwmValue;
+
+    // Calculate LED number based on side
+    if (side == VU_LEFT)
+    {
+      ledNumber = 1 + (i * 2);  // 1, 3, 5, ..., 31
+    }
+    else
+    {
+      ledNumber = 2 + (i * 2);  // 2, 4, 6, ..., 32
+    }
+
+    // Calculate PWM value
+    if (i < fullLeds)
+    {
+      pwmValue = 255;
+    }
+    else if (i == fullLeds)
+    {
+      pwmValue = partialPWM;
+    }
+    else
+    {
+      pwmValue = 0;
+    }
+
+    // Set PWM value
+    // VU meter LEDs are on IS1 (D1-D32)
+    setValue(IS_1_ADDR, ledNumber, pwmValue);
+  }
+}
+
+// Set encoder ring based on encoder value (0-127)
+void setEncoderRing(uint8_t encNumber, uint8_t encValue)
+{
+  /*
+    selectPage(IS_2_ADDR, PWM_REG);
+    setValue(IS_2_ADDR, 0x3b, 0xff);
+    setValue(IS_2_ADDR, 0x3C, 0xff);*/
+
+  // Skip encoder 1 (no ring)
+  if (encNumber == 0 || encNumber >= NUM_ENCODERS) return;
+
+  // Clamp value
+  if (encValue > ENC_MAX_VALUE) encValue = ENC_MAX_VALUE;
+
+  // Get the actual ring number from the encoder number
+  uint8_t ringNumber = encoderToRingMap[encNumber];
+  
+  // Convert encoder value to ring value (0-3570)
+  uint16_t ringValue = map(encValue, 0, ENC_MAX_VALUE, 0, ENC_RING_MAX_VALUE);
+
+
+  // Update the ring
+  updateEncoderRing(encNumber, ringValue);
+}
+
+// Update encoder ring with specific ring value (0-3570)
+void updateEncoderRing(uint8_t ringNumber, uint16_t ringValue)
+{
+  // Get the ring configuration
+  EncoderRing ring = encoderRings[ringNumber];
+
+
+  // Clamp value
+  if (ringValue > ENC_RING_MAX_VALUE) ringValue = ENC_RING_MAX_VALUE;
+
+  // Calculate how many LEDs should be fully on
+  uint8_t fullLeds = ringValue / 255;
+
+  // Calculate PWM for the partially lit LED
+  uint8_t partialPWM = ringValue % 255;
+
+  // Special handling for ring 12 (split between drivers)
+  if (ringNumber == 12)
+  {
+    // First 12 LEDs on IS1
+    for (uint8_t i = 0; i < 12; i++)
+    {
+      uint8_t pwmValue;
+
+      if (i < fullLeds)
+      {
+        pwmValue = 255;
+      }
+      else if (i == fullLeds)
+      {
+        pwmValue = partialPWM;
+      }
+      else
+      {
+        pwmValue = 0;
+      }
+
+      uint8_t ledAddress = ring.startLed + i;
+      selectPage(IS_1_ADDR, PWM_REG);
+      setValue(IS_1_ADDR, ledAddress, pwmValue);
+    }
+    // Last 2 LEDs on IS2 (starting at LED 1 on IS2)
+    for (uint8_t i = 12; i < 14; i++)
+    {
+      uint8_t pwmValue;
+
+      if (i < fullLeds)
+      {
+        pwmValue = 255;
+      }
+      else if (i == fullLeds)
+      {
+        pwmValue = partialPWM;
+      }
+      else
+      {
+        pwmValue = 0;
+      }
+
+      // For IS2, LEDs start at 1 for ring 12 continuation
+      uint8_t ledAddress = (i - 12) + 1; // LED 1 and 2 on IS2
+      selectPage(IS_2_ADDR, PWM_REG);
+      setValue(IS_2_ADDR, ledAddress, pwmValue);
+    }
+  }
+  else
+  {
+    //selectPage(IS_2_ADDR, PWM_REG);
+
+    // Normal ring handling (all LEDs on same driver)
+    for (uint8_t i = 0; i < 14; i++)
+    {
+      uint8_t pwmValue;
+
+      if (i < fullLeds)
+      {
+        pwmValue = 255;
+      }
+      else if (i == fullLeds)
+      {
+        pwmValue = partialPWM;
+      }
+      else
+      {
+        pwmValue = 0;
+      }
+
+      // Calculate LED address
+      uint8_t ledAddress = ring.startLed + i;
+
+      // Set PWM value on the appropriate driver
+      if (ring.driver == 0)
+      {
+        
+        selectPage(IS_1_ADDR, PWM_REG);
+        setValue(IS_1_ADDR, ledAddress, pwmValue);
+      }
+      else
+      {
+        
+        selectPage(IS_2_ADDR, PWM_REG);
+        setValue(IS_2_ADDR, ledAddress, pwmValue);
+      }
+    }
+  }
+}
+
+// Set mechanical switch state
+void setSwitch(uint8_t switchNumber, bool switchValue)
+{
+  if (switchNumber >= NUM_SWITCHES) return;
+
+  uint8_t pwmValue = switchValue ? 255 : 0;
+  SwitchLEDs leds = switchLEDs[switchNumber];
+
+  // Both LEDs are on IS2
+  setValue(IS_2_ADDR, leds.led1, pwmValue);
+  setValue(IS_2_ADDR, leds.led2, pwmValue);
+}
+
+.h file :
+
+#ifndef IS_FUNCTIONS_H
+#define IS_FUNCTIONS_H
+
+#include <Arduino.h>
+#include <Wire.h>
+
+// I2C IS defines
+#define IS_1_ADDR 0x20
+#define IS_2_ADDR 0x23
+#define DOT_DIM 0x11
+#define MATIAS_DIM 0xFF
+#define PWM_REG 0x00
+#define SCALLING_REG 0x01
+#define FUNCTION_REG 0x02
+
+// Constants
+#define VU_MAX_VALUE 4080
+#define ENC_MAX_VALUE 127
+#define ENC_RING_MAX_VALUE 3570  // 14 * 255
+#define NUM_SWITCHES 15
+#define VU_LEDS_PER_SIDE 16
+
+#define NUM_ENCODERS 18
+
+// VU Meter sides
+enum VUSide
+{
+  VU_LEFT = 0, VU_RIGHT = 1
+};
+
+// Encoder ring mapping structure
+struct EncoderRing
+{
+  uint8_t startLed;  // First LED of the ring
+  uint8_t driver;    // 0 for IS1, 1 for IS2
+};
+
+// Switch LED mapping (switch number -> {led1, led2})
+struct SwitchLEDs
+{
+  uint8_t led1;
+  uint8_t led2;
+};
+
+// Function prototypes
+void initIS(byte address);
+void initScalling(byte address);
+void selectPage(uint8_t address, uint8_t page);
+void setValue(byte address, byte led, byte value);
+void setPWM(byte address, byte led, byte value);
+void setVumeter(VUSide side, uint16_t value);
+void setEncoderRing(uint8_t encNumber, uint8_t encValue);
+void setSwitch(uint8_t switchNumber, bool switchValue);
+void updateEncoderRing(uint8_t encNumber, uint16_t ringValue);
+
+#endif

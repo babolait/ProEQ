@@ -1,0 +1,424 @@
+(footprint "EXB2HV472JV"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "EXB-2HV472JV-4")
+	(tags "Resistor Network")
+	(property "Reference" "RN1"
+		(at 0 2 180)
+		(layer "F.SilkS")
+		(uuid "7a600f1e-9812-4724-90f0-5802b8890d42")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "EXB-2HV472JV"
+		(at -0.359 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cb035065-818c-43a2-ae0a-14ae7936771e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d0e81511-d052-4a7a-9e09-512cece062a3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef1168bc-b30f-48c1-bc3b-94d65f0db641")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Resistor Networks & Arrays 4.7K OHM 5%"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0068c52a-af10-4ec5-a1ad-5eee354ff0a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Part Number" "EXB-2HV472JV"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "45cc9960-9a08-495b-85a8-305ac30c88b4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Price/Stock" "https://www.arrow.com/en/products/exb2hv472jv/panasonic?region=nac"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "879787a7-f633-41bb-9ecd-ba45fd45837c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "0.55"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a1dcdd8-26fa-43c6-b498-96941d4ebb3f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Panasonic"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "08431b96-ae66-41de-b2db-05c65106fe8f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "EXB-2HV472JV"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae1d4ccd-fe29-44b4-bfb8-83e254c3ae1a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "667-EXB-2HV472JV"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3dbea4be-18c2-4120-a163-85c005283ef6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EXB-2HV472JV?qs=oE3VwAv%2FYtkXaKqnJAGNag%3D%3D"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c92ee9a4-0b14-4221-a85b-f0e2ae6aee91")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -2.6 0.6)
+		(end -2.6 0.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4b0b3ea8-cbe2-4e34-98c2-be7ccb05b76e")
+	)
+	(fp_line
+		(start -2.6 0.8)
+		(end -2.6 0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "02f3c24f-1a66-4030-96f6-00b2cbd8675d")
+	)
+	(fp_line
+		(start -1.906 -0.2)
+		(end -1.906 0.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "939c0298-3183-4152-b6c2-cdba45626df8")
+	)
+	(fp_line
+		(start 1.9 -0.2)
+		(end 1.9 0.2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "170f811f-fc08-4d76-b6f2-5f84fddaf42e")
+	)
+	(fp_arc
+		(start -2.6 0.6)
+		(mid -2.5 0.7)
+		(end -2.6 0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7af8814f-50af-4ac3-b024-dbdf8d41b9ce")
+	)
+	(fp_arc
+		(start -2.6 0.8)
+		(mid -2.7 0.7)
+		(end -2.6 0.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7b599cac-2c1b-4398-8bdf-0c5e83a76b98")
+	)
+	(fp_line
+		(start -3.7 -2)
+		(end 2.981 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1390271d-8346-4ce5-a298-b531de3e907c")
+	)
+	(fp_line
+		(start -3.7 2)
+		(end -3.7 -2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d1d7387f-8fed-46f1-a540-dbc5cd9b2cc2")
+	)
+	(fp_line
+		(start 2.981 -2)
+		(end 2.981 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5e0c4d1d-26aa-453b-81b8-ec12d2817c41")
+	)
+	(fp_line
+		(start 2.981 2)
+		(end -3.7 2)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "a7a914d0-918a-4d21-a85d-c1a0bfb66785")
+	)
+	(fp_line
+		(start -1.9 -0.8)
+		(end 1.9 -0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "564abd49-2ecf-40e9-92d0-4f5f6cc0a12b")
+	)
+	(fp_line
+		(start -1.9 0.8)
+		(end -1.9 -0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "a4c4e581-cfb6-4476-b888-1bf4c865c1c0")
+	)
+	(fp_line
+		(start 1.9 -0.8)
+		(end 1.9 0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1ce59015-d57d-42dd-b131-1085417abe02")
+	)
+	(fp_line
+		(start 1.9 0.8)
+		(end -1.9 0.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "65bee670-acfb-4f1c-9e51-f2f6c6630b18")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.359 0 180)
+		(layer "F.Fab")
+		(uuid "53b9a734-3422-4e81-9b73-f83f11220299")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.906 0.875)
+		(size 0.425 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "73b7554d-15ca-4f29-996e-78e280a87a19")
+	)
+	(pad "2" smd rect
+		(at -1.319 0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "76b28113-01a2-4c8d-aacf-e112496cfac2")
+	)
+	(pad "3" smd rect
+		(at -0.819 0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e09341ee-687a-4b29-9de6-09dc6cb274a5")
+	)
+	(pad "4" smd rect
+		(at -0.319 0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "6ecf2516-9dda-4323-a55b-3c1014e10c86")
+	)
+	(pad "5" smd rect
+		(at 0.181 0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5ec4e76f-a5d9-42a5-9850-d44be43bdbd5")
+	)
+	(pad "6" smd rect
+		(at 0.681 0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "67518fbe-7aaf-4961-8895-7d9c90ecaa6d")
+	)
+	(pad "7" smd rect
+		(at 1.181 0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e82f6077-f827-430a-b040-21d78e5ed737")
+	)
+	(pad "8" smd rect
+		(at 1.769 0.875)
+		(size 0.425 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "5b1f8e7e-9239-49de-a6dc-ec9c77a4ff3b")
+	)
+	(pad "9" smd rect
+		(at 1.769 -0.875)
+		(size 0.425 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "f1a424cd-4de4-4107-ace7-5b0249c1b38e")
+	)
+	(pad "10" smd rect
+		(at 1.181 -0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "c71d1320-56b4-4778-b7f2-d6a8196c5f16")
+	)
+	(pad "11" smd rect
+		(at 0.681 -0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "9b2f74a3-62f6-4f02-b70a-629ecbf48591")
+	)
+	(pad "12" smd rect
+		(at 0.181 -0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "9cd48e21-4057-4a9b-b501-a0d487144b20")
+	)
+	(pad "13" smd rect
+		(at -0.319 -0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "3477e417-c602-4d6a-a0dc-dbbb2e8b1ce9")
+	)
+	(pad "14" smd rect
+		(at -0.819 -0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "e275b415-d527-4efc-a8c0-ad1a20ca6115")
+	)
+	(pad "15" smd rect
+		(at -1.319 -0.875)
+		(size 0.25 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "39ff4837-a825-426b-9a7b-8734138d02e9")
+	)
+	(pad "16" smd rect
+		(at -1.906 -0.875)
+		(size 0.425 0.75)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(uuid "d93feb25-b407-4556-a3db-e75e0a04f8a8")
+	)
+	(model "EXB-2HV472JV.stp"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/SYMB/EXB-2HV472JV/EXB-2HV472JV.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

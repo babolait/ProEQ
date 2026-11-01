@@ -1,0 +1,16 @@
+timeline Proeq :
+
+- Verifier pressfit taille chez jlc3dp
+- test lm66200
+- ajout sur PCB
+- Commande d'un anneau et d'un VU chez jlc3dp
+
+- Test d'un MCP + IS en même temps
+- Commande d'un AVR isp
+- Test chip AVR et bootloader midikilik
+- Test du firm avec un script fruity
+
+- Precommande PCBa chez JLC 500led, IS ect
+- Commande PCBa 2 cartes + 3 cartes
+
+

@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "PRO EQ")(type "KiCad")(uri "${KIPRJMOD}/PRO EQ.kicad_sym")(options "")(descr ""))
+)

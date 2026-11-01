@@ -1,0 +1,466 @@
+(footprint "EAW0J-B24-AE0128L"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(descr "EAW PCB-Bracket Mounted-Housing B")
+	(tags "Integrated Circuit")
+	(property "Reference" "IC2"
+		(at 0 16 0)
+		(layer "F.SilkS")
+		(uuid "fd281006-fab4-453c-9a27-12f7be694a84")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "EAW0J-B24-AE0128L"
+		(at 0.273 -0.456 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "24f0abbb-7254-4140-936b-197ac2f066c1")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87b1288d-8362-4d64-9928-9e35cdf422a9")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "00d85693-e0a4-41f5-8b67-ce43e307d0f6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "ACE absolute contact encoder,128 states Bourns 128 Pulse Absolute Mechanical Rotary Encoder with a 6.35 mm Plain with Slot Shaft (Not Indexed), Bracket Mount"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "905f87bf-83e8-44a1-829f-a5f9466f3640")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Part Number" "EAW0J-B24-AE0128L"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "978f3fa3-6540-409f-bcb6-8f668eea61bd")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Arrow Price/Stock" "https://www.arrow.com/en/products/eaw0j-b24-ae0128l/bourns"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78e2c47c-997e-445f-ac84-eb75af59f2b2")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d15b8e4f-aafc-42fd-84b2-06e087a228a5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "Bourns"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "34cd732c-6e72-4c85-a3f7-75240c1b28a3")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "EAW0J-B24-AE0128L"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d8974364-8f22-4e17-8570-9b0d3a30582e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "652-EAW0J-B24-AEL"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "11c73456-db15-45d3-b5a8-b22fd0b79032")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/EAW0J-B24-AE0128L?qs=aqFbwuCjQokgDAHRuMOX2g%3D%3D"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0a7debff-d9fe-40ec-9737-6228256b45b6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -11.94 -6.378)
+		(end -11.94 6.094)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8794a665-0dde-4e18-a165-a41a60537ca4")
+	)
+	(fp_line
+		(start 11.94 -6.435)
+		(end 11.94 6.037)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c19dc644-a375-41a2-8853-1796e7706082")
+	)
+	(fp_line
+		(start -11 -11.5)
+		(end -11 11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "ebfd1525-c173-4e53-84e8-3a799f8ece25")
+	)
+	(fp_line
+		(start -11 11.5)
+		(end -6.5 11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "2197fb20-e146-4eda-916e-fa9cebc2e915")
+	)
+	(fp_line
+		(start -6.5 -14)
+		(end -6.5 -11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "4b572c4c-6433-4fdc-b345-c52b48c89db9")
+	)
+	(fp_line
+		(start -6.5 -11.5)
+		(end -11 -11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "8cad7910-7770-41f3-98a1-8769d3eccf66")
+	)
+	(fp_line
+		(start -6.5 11.5)
+		(end -6.5 13.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "6a0823fa-d2ab-40ba-b3f4-d62bc793ee49")
+	)
+	(fp_line
+		(start -6.5 13.5)
+		(end -6.5 14)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "e23e812e-0f70-4279-8d7c-48bdc36cbfa1")
+	)
+	(fp_line
+		(start -6.5 14)
+		(end 6.5 14)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c29da83b-23e1-421e-8d7d-8d6f35321fae")
+	)
+	(fp_line
+		(start 6.5 -14)
+		(end -6.5 -14)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "459fdc43-7199-41d9-bcec-f88eee977885")
+	)
+	(fp_line
+		(start 6.5 -11.5)
+		(end 6.5 -14)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "fb89cb45-14da-4b61-85f3-7a93b5753076")
+	)
+	(fp_line
+		(start 6.5 11.5)
+		(end 11 11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "f6515fbd-a3bf-4f19-9597-dabe897e6aad")
+	)
+	(fp_line
+		(start 6.5 14)
+		(end 6.5 11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "61d4a9e3-8207-40dd-a374-3d41e76c9295")
+	)
+	(fp_line
+		(start 11 -11.5)
+		(end 6.5 -11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "ec6cd009-38ec-4c57-a17c-fb76b40b924e")
+	)
+	(fp_line
+		(start 11 11.5)
+		(end 11 -11.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "43cb71ab-6556-43ae-aa50-367acb66ad5d")
+	)
+	(fp_line
+		(start -11.94 -13.97)
+		(end 11.94 -13.97)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f836b0cc-df9c-473f-b5d6-69815976e2a2")
+	)
+	(fp_line
+		(start -11.94 13.97)
+		(end -11.94 -13.97)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "02330b2a-cd44-400b-9c52-f358dddd92c6")
+	)
+	(fp_line
+		(start 11.94 -13.97)
+		(end 11.94 13.97)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "1be6b1bb-428c-431a-b33d-c3a98bb9fa15")
+	)
+	(fp_line
+		(start 11.94 13.97)
+		(end -11.94 13.97)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c4ef071b-82e4-40ef-a254-b574fedc3273")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.273 -0.456 0)
+		(layer "F.Fab")
+		(uuid "dc14f9d5-e04b-4310-a7af-415b75f3d5bf")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -5.08 12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ca1c1dfa-a0b4-47ec-bbe3-ad36eaf53d53")
+	)
+	(pad "2" thru_hole circle
+		(at -2.54 12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "29506029-19d3-4b29-b6ac-743518f5f436")
+	)
+	(pad "3" thru_hole circle
+		(at 0 12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a374c7dd-7adc-43d7-ac86-420d16ae2441")
+	)
+	(pad "4" thru_hole circle
+		(at 2.54 12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9e292232-bf94-4f3d-b147-65b5c23a5dff")
+	)
+	(pad "5" thru_hole circle
+		(at 5.08 12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "85a7e65e-2802-4852-b15d-c4802d04379c")
+	)
+	(pad "6" thru_hole circle
+		(at 5.08 -12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e4c7c5ba-9f0e-454b-a0a1-418221da922d")
+	)
+	(pad "7" thru_hole circle
+		(at 2.54 -12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "961a259f-38fc-45f0-8df3-9f00027a8e57")
+	)
+	(pad "8" thru_hole circle
+		(at 0 -12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9914e0a5-bc2d-46e2-ac20-033261b30afc")
+	)
+	(pad "9" thru_hole circle
+		(at -2.54 -12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "198dd3db-5ef1-4954-afdc-2f21a312a216")
+	)
+	(pad "10" thru_hole circle
+		(at -5.08 -12.7)
+		(size 1.8 1.8)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d6b85567-889b-41b0-a3bc-a405deeaaeff")
+	)
+	(model "EAW0J-B24-AE0128L.stp"
+		(offset
+			(xyz -0.3 -0.02 4.25)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/SYMB/EAW0J-B24-AE0128L/EAW0J-B24-AE0128L.stp"
+		(offset
+			(xyz 0 0 3.1)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/VLP model + ring/step/Unnamed-vlp005.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -1,0 +1,46 @@
+Board V1 problems :
+
+✅Trous de matias 15.5x15.5 au lieu de 15.5 x 12.8
+	➡️ Board a recommander a bonne dimensions (avec 3D print en même temps ?)
+	
+✅ Longueur Board daughter pas aligné
+	* Board a redisegner
+	
+✅ Etiquette C16 R12 echangé 
+	* Carte a rerouter ?
+	
+✅ C5 / C1 confusion complète dans alim
+	* Carte à rerouter ?
+	
+✅ Schéma plus en lien avec le PCB, footprint plus assignés au symboles
+	* Carte à rerouter ?
+	
+✅ silkscreen matias cathode sur front au lieu de back
+	* Carte à rerouter ?
+	
+✅ header lcd non présent
+	* Carte à rerouter avec un header ?
+	
+- 0 implantation technique case
+	* Peu-être pas un soucis, sinon, carte à rerouter
+	
+✅ etat 5V ext puis USB ok, mais USB puis 5V out ? 
+	* on garde le 5V out only pour la v2
+	
+✅ routage en .25
+	* Carte à rerouter
+	
+- lumi spi
+	* Pas forcément une idée. Carte à rerouter
+	
+✅ Changement vis gauche en dessous LCD de x = 11 / y = 53.5 en x = 21 / y = 53.5
+
+✅ Changement vis droite en dessous LCD de x = 136 / y = 56 en x = 129 / y = 53.5
+
+- 3D print a revoir zone daughter, a commander et tester le press fit
+
+-pcba a JLC
+	est-ce possible de commander les leds et faire du placement pour 1 board seuleument 
+	
+- Dimensions LCD reverse et lcd pliage changés
+	

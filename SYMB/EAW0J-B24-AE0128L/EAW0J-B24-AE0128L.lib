@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model EAW0J-B24-AE0128L
+#/311233/1314882/2.50/10/3/Integrated Circuit
+DEF EAW0J-B24-AE0128L IC 0 30 Y Y 1 F N
+F0 "IC" 850 300 50 H V L CNN
+F1 "EAW0J-B24-AE0128L" 850 200 50 H V L CNN
+F2 "EAW-PCB-BRACKET-MOUNTED-HOUSING-B" 850 100 50 H I L CNN
+F3 "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-7/sf-000140032.pdf" 850 0 50 H I L CNN
+F4 "ACE absolute contact encoder,128 states Bourns 128 Pulse Absolute Mechanical Rotary Encoder with a 6.35 mm Plain with Slot Shaft (Not Indexed), Bracket Mount" 850 -100 50 H I L CNN "Description"
+F5 "" 850 -200 50 H I L CNN "Height"
+F6 "Bourns" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "EAW0J-B24-AE0128L" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "652-EAW0J-B24-AEL" 850 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Bourns/EAW0J-B24-AE0128L?qs=aqFbwuCjQokgDAHRuMOX2g%3D%3D" 850 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "EAW0J-B24-AE0128L" 850 -700 50 H I L CNN "Arrow Part Number"
+F11 "https://www.arrow.com/en/products/eaw0j-b24-ae0128l/bourns" 850 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X 1 1 0 0 200 R 50 50 0 0 P
+X 2 2 0 -100 200 R 50 50 0 0 P
+X C_1 3 0 -200 200 R 50 50 0 0 P
+X 3 4 0 -300 200 R 50 50 0 0 P
+X 4 5 0 -400 200 R 50 50 0 0 P
+X 5 6 1000 0 200 L 50 50 0 0 P
+X 6 7 1000 -100 200 L 50 50 0 0 P
+X C_2 8 1000 -200 200 L 50 50 0 0 P
+X 7 9 1000 -300 200 L 50 50 0 0 P
+X 8 10 1000 -400 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -500 200 -500 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

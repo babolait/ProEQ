@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP QBLP670D-IB
+D Dome Type PLCC2 LED
+K
+F https://www.qt-brightek.com/datasheet/QBLP670D_series.pdf
+$ENDCMP
+#
+#End Doc Library

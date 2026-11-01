@@ -1,0 +1,6 @@
+blender :
+
++0.3 mm pour un montage fit (test)
+socle height 2.7+0.3
+socle width 4.7+0.3
+tube 11.3-0.3

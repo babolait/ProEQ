@@ -1,0 +1,52 @@
+# ProEQ — what stays out of git (and why)
+# Policy "Tier A": KiCad sources + BOM + small CAD deliverables are tracked.
+# Fabrication outputs and heavy 3D data ship as GitHub Release assets instead.
+
+# --- OS / editor debris --------------------------------------------------
+Thumbs.db
+.DS_Store
+
+# KiCad local UI state: window geometry, visible layers, zoom, last plot dir.
+# Decision: ignored. Pure per-machine noise, changes on every pan and zoom.
+*.kicad_prl
+
+# --- KiCad transients, autosaves and backup trees ------------------------
+_autosave-*
+*-backups/
+ProjectEQ-backups/
+fp-info-cache
+.history*
+
+# --- fabrication outputs (Release assets) --------------------------------
+# Gerber/drill plots, JLC/PCBWay packages, CPL + position files, IPC netlist.
+Gerber/
+Gerber V1 old/
+jlcpcb/
+production/
+PLOTS/
+plots/
+*.zip
+# full duplicate of the main board inside the laser-cut folder (19 MB)
+SVG for cut/ProjectEQ.kicad_pcb
+
+# --- heavy CAD (Release assets) ------------------------------------------
+ProjectEQ.step
+ProjectEQ_V2.pcb3d
+Board_render.blend
+*.blend
+*.blend1
+*.FCBak
+*.stl
+VLP model + ring/step/
+VLP model + ring/VLP Vu/*.step
+
+# --- stale duplicates of the same design ---------------------------------
+ProjectEQ-backup.*
+ProjectEQ_backup.kicad_pcb
+ProjectEQ_backup.kicad_pro
+*rearrangeled*
+*.bak
+
+# --- private notes, not project material ---------------------------------
+# Personal diary, no technical content. Kept on disk, deliberately not published.
+board installation timeline

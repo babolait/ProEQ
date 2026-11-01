@@ -1,0 +1,17 @@
+"Id";"Designator";"Footprint";"Quantity";"Designation";"Supplier and ref";
+1;"D8,D3,D5,D14,D11,D10,D13,D12,D1,D4,D7,D2,D6,D9";"SMLZ24E2N3TT86";14;"LED_inv";;;
+2;"IC1";"EAW0J-B24-AE0128L";1;"EAW0J-B24-AE0128L";;;
+3;"A0,A2,A1";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";3;"0";;;
+4;"TP_CS1,TP_D1,TP_D2";"PinHeader_1x01_P2.54mm_Vertical";3;"TestPoint";;;
+5;"U**,U**,U**,U**,U**,U**,U**,U**,U**,U**,U**,U**,U**,U**";"VLP450R";14;"VLP450R";;;
+6;"RN1";"EXB2HV472JV";1;"EXB-2HV472JV";;;
+7;"U2";"SSOP-28_5.3x10.2mm_P0.65mm";1;"MCP23S17_SO";;;
+8;"REF**";"carte_Fille";1;"carte_Fille";;;
+9;"SW2";"SW_Matias_QC";1;"Matias QUIET Click";;;
+10;"R2,R1";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";2;"20";;;
+11;"J2";"PinHeader_1x13_P2.54mm_Vertical";1;"Conn_01x13";;;
+12;"D17";"SMLZ24E2N3TT86_SPEMAT";1;"LED_inv";;;
+13;"R3";"R_0603_1608Metric_Pad0.98x0.95mm_HandSolder";1;"100k";;;
+14;"IC2";"IS31FL3743A";1;"IS31FL3743A-QULS4-TR";;;
+15;"C4,C1,C5";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";3;"0,1uF";;;
+16;"C2,C3";"C_0603_1608Metric_Pad1.08x0.95mm_HandSolder";2;"1uF";;;

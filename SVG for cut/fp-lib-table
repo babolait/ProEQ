@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "SML_SVG")(type "KiCad")(uri "${KIPRJMOD}/SML_SVG.pretty")(options "")(descr ""))
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EAW0J-B24-AE0128L
+D ACE absolute contact encoder,128 states Bourns 128 Pulse Absolute Mechanical Rotary Encoder with a 6.35 mm Plain with Slot Shaft (Not Indexed), Bracket Mount
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-7/sf-000140032.pdf
+$ENDCMP
+#
+#End Doc Library

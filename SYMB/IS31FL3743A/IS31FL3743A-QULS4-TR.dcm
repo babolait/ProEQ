@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IS31FL3743A-QULS4-TR
+D LED Lighting Drivers 18x11 Dot Matrix I2C (1MHz) LED Driver with Noise Reduction, 8-bit Current Adjust, QFN-40 (5.0mm x 5.0mm)
+K
+F https://www.lumissil.com/assets/pdf/core/IS31FL3743A_DS.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,115 @@
+ProEQ project documentation :
+- 1 Arduino
+- 2 11 poles 1 throw rotary switch
+- 2 IS31FL3743A I2C Led drivers
+- 270 LEDs
+- 10 MCP23s017 SPI expander
+- 18 ACE absolute encoder
+- 15 mechnical switch
+- 1 LCD screen 16x02
+
+Global connections :
+Arduino <-SPI-> MCP23s17 (x10) <-PORT_CONNECTION- ACE Absolute encoder (x18)
+Arduino <-SPI-> MCP23s17 (x10) <-PORT_CONNECTION- Mechanical Switch (x15)
+Arduino <-I2C-> IS31FL3743A (x2) -PWM-> LEDS (x270)
+Arduino <-LCD_Con-> LCD (x1)
+Arduino <-Analog_Input- 11_positions_switch_resistor_ladder (x2)
+
+Arduino Ports :
+D2 = CS_0
+D3 = CS_1
+
+D4 = LCD_D4
+D5 = LCD_D5
+D6 = LCD_D6
+D7 = LCD_D7
+D8 = LCD_E
+D9 = LCD_RS
+D10 = LCD_R/W
+
+D11 = MOSI
+D12 = MISO
+D13 = SCK
+
+A0 = 11_Value_analog_switch_ladder
+A1 = 11_Value_analog_switch_2_ladder
+A4 = SDA
+A5 = SCL
+
+
+
+MCP Address :
+U2 CS_0 0-0-0
+U3 CS_0 0-0-1
+U4 CS_0 0-1-0
+U5 CS_0 0-1-1
+U6 CS_0 1-0-0
+U7 CS_0 1-0-1
+U8 CS_0 1-1-0
+U9 CS_0 1-1-1
+U10 CS_1 0-0-1
+U11 CS_1 0-0-0
+
+
+MCP23s17 addressing register :
+Device OPcode : 0100 A2 A1 A0 Read/Write
+
+// SPI MCP defines registers
+#define IOCON 0x0A
+#define IOCON_parameters 0b01111000   //BANK = 0, Address pin used see page 21
+
+#define IODIRA 0x00
+#define IODIRB 0x01
+#define IODIR_parameters 0xFF  //0xFF -> everything as input
+
+#define IPOLA 0x02
+#define IPOLB 0x03
+#define IPOL_parameters 0x00  // polarity = normal
+
+#define GPINTENA 0x04
+#define GPINTENB 0x05
+#define GPINTEN_parameters 0x00    //disbale interrupt on change
+
+#define GPPUA 0x0C
+#define GPPUB 0x0D
+#define GPPU_parameters 0x00   //pullup disabled
+
+
+ACE ENCODER / MCP23s17 correlations :
+Encoder_1 = MCP_U11_GPA
+Encoder_2 = MCP_U2_GPB
+Encoder_3 = MCP_U2_GPA
+Encoder_4 = MCP_U4_GPA
+Encoder_5 = MCP_U3_GPB
+Encoder_6 = MCP_U3_GPA
+Encoder_7 = MCP_U4_GPB
+Encoder_8 = MCP_U5_GPB
+Encoder_9 = MCP_U5_GPA
+Encoder_10 = MCP_U7_GPA
+Encoder_11 = MCP_U6_GPB
+Encoder_12 = MCP_U6_GPA
+Encoder_13 = MCP_U7_GPB
+Encoder_14 = MCP_U8_GPB
+Encoder_15 = MCP_U8_GPA
+Encoder_16 = MCP_U10_GPA
+Encoder_17 = MCP_U9_GPB
+Encoder_18 = MCP_U9_GPA
+
+Switch positions :
+Switch_1 = MCP_U11_GPB7
+Switch_2 = MCP_U11_GPB0 
+Switch_3 = MCP_U11_GPB6
+Switch_4 = MCP_U11_GPB1
+Switch_5 = MCP_U11_GPB5
+Switch_6 = MCP_U11_GPB2
+Switch_7 = MCP_U11_GPB4
+Switch_8 = MCP_U11_GPB3
+Switch_9 = MCP_U10_GPB1
+Switch_10 = MCP_U10_GPB0
+Switch_11 = MCP_U10_GPB2
+Switch_12 = MCP_U10_GPB3
+Switch_13 = MCP_U10_GPB4
+Switch_14 = MCP_U10_GPB5
+Switch_15 = MCP_U10_GPB6
+NOT_USED = MCP_U10_GPB7
+

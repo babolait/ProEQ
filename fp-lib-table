@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PRO EQ")(type "KiCad")(uri "${KIPRJMOD}/PRO EQ.pretty")(options "")(descr ""))
+  (lib (name "PROEQ")(type "KiCad")(uri "${KIPRJMOD}/ProjectEQ_PROTOBOARD/PROEQ.pretty")(options "")(descr ""))
+)

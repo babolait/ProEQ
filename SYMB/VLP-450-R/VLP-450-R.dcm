@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP VLP-450-R
+D LED Light Pipes Light Pipe Vert SMD Round Face
+K
+F https://www.bivar.com/parts_content/Datasheets/VLP-XXX-X.pdf
+$ENDCMP
+#
+#End Doc Library

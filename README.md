@@ -1,4 +1,6 @@
-# An Arduino-based MIDI controller for precise parametric EQ VST plugin control
+# ProEQ
+
+**An Arduino-based MIDI controller for precise parametric EQ VST plugin control.**
 
 ProEQ is the hardware half of an EQ plug-in controller: a front panel of 18
 absolute encoders, 15 mechanical keyswitches, 2 eleven-position rotary switches

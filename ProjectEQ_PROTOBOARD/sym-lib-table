@@ -1,5 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "PRO EQ")(type "KiCad")(uri "C:/Users/user/Documents/ProjectEQ/PRO EQ.kicad_sym")(options "")(descr ""))
-  (lib (name "PROEQ")(type "KiCad")(uri "${KIPRJMOD}/PROEQ.kicad_sym")(options "")(descr ""))
-)

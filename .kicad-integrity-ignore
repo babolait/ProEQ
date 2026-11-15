@@ -1,0 +1,19 @@
+# Known exceptions for tools/check_kicad_integrity.py
+#
+# One '<path fragment>' per line, optionally followed by " # reason". A finding
+# whose detail matches a fragment is reported as KNOWN instead of ERROR, so the
+# check fails only on breakage somebody can actually fix in this repository.
+#
+# Keep this list short and justified. Every entry is geometry that is referenced
+# by the design but deliberately not distributed in git.
+
+# Folded-steel enclosure body (acier plié v2). Heavy 3D source, never published.
+libraries/3dmodels/enclosure-folded-steel-v2.step
+
+# Cut front plate solid (plate V5). The flat plate STEP is in mechanical/; the
+# cut variant is a fabrication export and ships as a GitHub Release asset.
+libraries/3dmodels/proeq-frontplate-cut.step
+
+# VLP light-guide STEP (41 MB in the original working tree). Release asset only;
+# the 2D footprint and the light-guide dimensions live in the library.
+libraries/3dmodels/unnamed-vlp005.step

@@ -1,0 +1,4440 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e78c5024-415b-4aa4-b202-035e50725e9d")
+	(paper "A4")
+	(title_block
+		(title "Switchs méchaniques matias")
+		(date "2024-08-18")
+		(rev "3")
+		(company "ProEQ : PCB 1")
+	)
+	(lib_symbols
+		(symbol "ProEQ:sw_led"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "sw_led_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -4.445) (xy 0.635 -5.08) (xy -0.635 -5.715) (xy -0.635 -4.445) (xy 0.635 -5.08) (xy 0.635 -4.445)
+						(xy 0.635 -5.715)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -5.08) (xy -1.27 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -6.985) (xy 0.635 -7.62) (xy -0.635 -8.255) (xy -0.635 -6.985) (xy 0.635 -7.62) (xy 0.635 -6.985)
+						(xy 0.635 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -7.62) (xy -1.27 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -5.08) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -7.62) (xy 1.27 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 -1.27)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "sw_led_1_1"
+				(pin passive line
+					(at -3.81 -1.27 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -5.08 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -3.81 -7.62 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -1.27 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 -7.62 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 137.16 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00e943be-6015-49f1-a889-797cf5cab950")
+	)
+	(junction
+		(at 203.2 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06556fbe-a9c4-41a8-9c6d-70aa9e34cb90")
+	)
+	(junction
+		(at 132.08 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13e47528-6b7f-4374-899e-ceb8735e3f04")
+	)
+	(junction
+		(at 76.2 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2828bc13-6a5f-4b02-800d-abbef2b992fc")
+	)
+	(junction
+		(at 160.02 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fc5dbdd-b1b8-445a-beca-bece44786393")
+	)
+	(junction
+		(at 132.08 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "363f5e08-f295-42e6-93e7-9ada46742ddd")
+	)
+	(junction
+		(at 137.16 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "528a5fb5-df38-484c-b488-8eab4598615a")
+	)
+	(junction
+		(at 193.04 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54ba4190-60d3-4460-b574-e0269f1c1ebb")
+	)
+	(junction
+		(at 165.1 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5f0c14b1-8d50-4c0f-b68c-451818c50773")
+	)
+	(junction
+		(at 132.08 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71994f1c-119d-46ff-bfc0-d5a208a9e01e")
+	)
+	(junction
+		(at 104.14 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c6894a7-48fd-4d58-9e0c-6cddc6a9d7ef")
+	)
+	(junction
+		(at 109.22 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e0f921e-97bd-45b9-967f-214b6d26808f")
+	)
+	(junction
+		(at 203.2 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84ecc7de-672f-4739-920f-f36051460c73")
+	)
+	(junction
+		(at 187.96 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88d834ea-34f4-4143-8390-daa09bf074f9")
+	)
+	(junction
+		(at 137.16 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a463b9c-ecb3-42df-b181-8d5fc04a2e1a")
+	)
+	(junction
+		(at 160.02 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abfa594e-6a96-4869-85f0-e39d9b947eff")
+	)
+	(junction
+		(at 193.04 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae81eef4-f578-4c55-bfcf-a104bc25cd93")
+	)
+	(junction
+		(at 160.02 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af8a6961-9ad9-4ef4-a00f-c2baa674077c")
+	)
+	(junction
+		(at 76.2 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd509f5b-7ee6-4113-b58c-7dfe1b0cb8fd")
+	)
+	(junction
+		(at 109.22 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1f55884-8c8c-401f-b963-ff207c55d7c4")
+	)
+	(junction
+		(at 187.96 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5153257-504e-48ee-9847-9a7982d8f917")
+	)
+	(junction
+		(at 109.22 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7470921-457b-4e06-8886-21e3ea37ff86")
+	)
+	(junction
+		(at 165.1 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d0dee1bd-4150-4d07-bd21-b5e5cffcfc74")
+	)
+	(junction
+		(at 165.1 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec34cd3b-5b9f-454f-b289-bbf0f4d61032")
+	)
+	(junction
+		(at 104.14 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4f0f563-194f-45ff-8fd7-196b395a00ca")
+	)
+	(junction
+		(at 104.14 139.7)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6937187-3202-4988-b09d-04785c1e1b70")
+	)
+	(junction
+		(at 76.2 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa099781-a3d1-496e-9745-7fb488de38e8")
+	)
+	(junction
+		(at 193.04 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fbdb5861-84ae-477b-9017-61d3f32477dc")
+	)
+	(wire
+		(pts
+			(xy 186.69 88.9) (xy 186.69 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "024f09cd-e268-4727-8ce9-f36852552e60")
+	)
+	(wire
+		(pts
+			(xy 105.41 97.79) (xy 105.41 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0268ec1a-e556-42c2-a024-a3126fa7db44")
+	)
+	(wire
+		(pts
+			(xy 165.1 48.26) (xy 165.1 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02f5441e-c288-474d-8a2a-acdb0ca5f627")
+	)
+	(wire
+		(pts
+			(xy 132.08 58.42) (xy 130.81 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b2a3f9-0739-49a4-aa87-1bcf5c9a79df")
+	)
+	(wire
+		(pts
+			(xy 74.93 139.7) (xy 74.93 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0723f7f8-f6e7-4b92-a4a9-55ae18e858d1")
+	)
+	(wire
+		(pts
+			(xy 132.08 59.69) (xy 132.08 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0749ba56-4f19-4732-b1f7-09c87df980a8")
+	)
+	(wire
+		(pts
+			(xy 186.69 48.26) (xy 186.69 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "088a6a0f-b3bf-4cb4-a12f-693a05364913")
+	)
+	(wire
+		(pts
+			(xy 137.16 129.54) (xy 137.16 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0891dede-861a-4b65-aebd-cd2461da7650")
+	)
+	(wire
+		(pts
+			(xy 193.04 110.49) (xy 193.04 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a9498c5-2948-4a72-bb2e-07ab02603d4b")
+	)
+	(wire
+		(pts
+			(xy 74.93 129.54) (xy 74.93 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c808222-9518-4bde-9719-bc2f55f02feb")
+	)
+	(wire
+		(pts
+			(xy 104.14 59.69) (xy 104.14 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0deae241-d340-42ec-85de-041cf53e781a")
+	)
+	(wire
+		(pts
+			(xy 189.23 57.15) (xy 189.23 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f0761c1-fe30-4f81-987d-61897259ab3a")
+	)
+	(wire
+		(pts
+			(xy 193.04 129.54) (xy 193.04 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10e21da3-0cd5-416f-af34-027b857987f2")
+	)
+	(wire
+		(pts
+			(xy 105.41 88.9) (xy 105.41 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1348d74e-1aa9-44de-852f-673440d8c0f8")
+	)
+	(wire
+		(pts
+			(xy 133.35 48.26) (xy 133.35 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15cd933d-3f20-4b81-8089-b4da1c966934")
+	)
+	(wire
+		(pts
+			(xy 102.87 99.06) (xy 102.87 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15eada21-6639-4826-9e6b-d9b2ccf060bc")
+	)
+	(wire
+		(pts
+			(xy 104.14 140.97) (xy 104.14 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "167725dd-f161-47b2-94e8-a306b05302a6")
+	)
+	(wire
+		(pts
+			(xy 130.81 99.06) (xy 130.81 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "181ba7a3-5c12-4d1a-9ada-3c8ebfabd9aa")
+	)
+	(wire
+		(pts
+			(xy 193.04 68.58) (xy 165.1 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a5aa6fe-c84b-47b4-8ba8-d96447b12814")
+	)
+	(wire
+		(pts
+			(xy 133.35 129.54) (xy 133.35 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c85e4cb-3b95-4c31-9f26-2e06b8015cd7")
+	)
+	(wire
+		(pts
+			(xy 104.14 99.06) (xy 102.87 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d86f137-9f7a-4b9c-8002-ece1bacb2421")
+	)
+	(wire
+		(pts
+			(xy 165.1 88.9) (xy 165.1 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fa1d096-6a85-4942-9448-9df2871a92f6")
+	)
+	(wire
+		(pts
+			(xy 137.16 48.26) (xy 137.16 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "202f564d-0c38-44b0-a57d-3b471aaaf306")
+	)
+	(wire
+		(pts
+			(xy 161.29 138.43) (xy 161.29 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "215ff848-46fd-4f94-912a-079e886445c7")
+	)
+	(wire
+		(pts
+			(xy 158.75 58.42) (xy 158.75 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2666c70b-fd8d-4018-81ec-a67e39699cba")
+	)
+	(wire
+		(pts
+			(xy 74.93 99.06) (xy 74.93 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "267d9c72-c47c-4b03-a1ad-2734849967f5")
+	)
+	(wire
+		(pts
+			(xy 105.41 139.7) (xy 104.14 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2763c84b-e54d-4a7e-9d8e-7f042d00cdb1")
+	)
+	(wire
+		(pts
+			(xy 161.29 58.42) (xy 160.02 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28e220df-fc63-4e75-970f-b06e21275ae9")
+	)
+	(wire
+		(pts
+			(xy 160.02 140.97) (xy 160.02 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29685dd4-bea6-47cd-9023-6d8dbce6a94f")
+	)
+	(wire
+		(pts
+			(xy 186.69 100.33) (xy 186.69 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a084b34-9ba2-40f9-9167-6b4c5ab1467f")
+	)
+	(wire
+		(pts
+			(xy 77.47 138.43) (xy 77.47 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a1ac996-66ad-4c92-9809-96f59040cb6c")
+	)
+	(wire
+		(pts
+			(xy 74.93 48.26) (xy 74.93 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c56954d-3b72-4333-9a01-c1f6c30ee4b8")
+	)
+	(wire
+		(pts
+			(xy 77.47 88.9) (xy 77.47 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fa78fb3-9577-42c7-b6f9-f6573f9fd21c")
+	)
+	(wire
+		(pts
+			(xy 132.08 99.06) (xy 130.81 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fee4b13-cdc1-4e16-8627-9c6dc40edaf6")
+	)
+	(wire
+		(pts
+			(xy 158.75 139.7) (xy 158.75 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3083e760-4fec-4730-afef-8115b8c5776b")
+	)
+	(wire
+		(pts
+			(xy 133.35 58.42) (xy 132.08 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "343bbf28-78e9-4496-a59f-645e33388015")
+	)
+	(wire
+		(pts
+			(xy 81.28 149.86) (xy 81.28 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3597d404-1aaa-4e1e-9f15-4dc8ac394db4")
+	)
+	(wire
+		(pts
+			(xy 109.22 129.54) (xy 109.22 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3623c6c0-c38d-4795-9c18-1a7675bfd786")
+	)
+	(wire
+		(pts
+			(xy 165.1 68.58) (xy 165.1 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39bb2bd9-7cb4-415c-9b7d-9491cdb285a2")
+	)
+	(wire
+		(pts
+			(xy 130.81 88.9) (xy 130.81 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a0b1a1c-94aa-40ae-baa2-e205ab89834f")
+	)
+	(wire
+		(pts
+			(xy 102.87 58.42) (xy 102.87 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a4ff6bb-902d-4de0-ab6a-8d7b86fbee7d")
+	)
+	(wire
+		(pts
+			(xy 165.1 129.54) (xy 165.1 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3dccb754-0eff-473e-98c8-bb0ef15ccb1d")
+	)
+	(wire
+		(pts
+			(xy 186.69 139.7) (xy 186.69 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "406f361c-1ca3-4ef6-906e-c2dd9ceff191")
+	)
+	(wire
+		(pts
+			(xy 137.16 149.86) (xy 137.16 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40a669ac-0abe-442a-b396-7366a9b755e6")
+	)
+	(wire
+		(pts
+			(xy 105.41 48.26) (xy 105.41 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41858aed-eabd-4e9d-ac7e-654dc630c248")
+	)
+	(wire
+		(pts
+			(xy 81.28 68.58) (xy 81.28 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46150f9a-000c-416c-b064-f5cbc3b7f4f4")
+	)
+	(wire
+		(pts
+			(xy 104.14 100.33) (xy 104.14 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48f1ca96-f399-43ea-b501-71121c026bc2")
+	)
+	(wire
+		(pts
+			(xy 158.75 99.06) (xy 158.75 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49c1e8dc-ce94-4e4e-aeb2-2e2857745beb")
+	)
+	(wire
+		(pts
+			(xy 105.41 58.42) (xy 104.14 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b48b56f-c77e-4e9e-b2d5-1a8d8f0876cb")
+	)
+	(wire
+		(pts
+			(xy 161.29 97.79) (xy 161.29 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d63d71e-a3ac-457f-bfeb-8357b75bd122")
+	)
+	(wire
+		(pts
+			(xy 76.2 100.33) (xy 76.2 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "530baeba-3676-4d96-9466-f89e31ba754a")
+	)
+	(wire
+		(pts
+			(xy 137.16 149.86) (xy 109.22 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53b87514-41d8-4b73-9502-0ce182a80de2")
+	)
+	(wire
+		(pts
+			(xy 105.41 57.15) (xy 105.41 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54a1af72-22d5-4eac-8ccb-f12e739dc620")
+	)
+	(wire
+		(pts
+			(xy 193.04 48.26) (xy 193.04 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "595c2338-be07-4c42-9a42-99362763491f")
+	)
+	(wire
+		(pts
+			(xy 187.96 140.97) (xy 187.96 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6058342e-4770-46b4-aa4f-55ea73c6cc86")
+	)
+	(wire
+		(pts
+			(xy 160.02 99.06) (xy 158.75 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "611545e0-719a-4be3-9d67-8e8f6ea031fc")
+	)
+	(wire
+		(pts
+			(xy 109.22 48.26) (xy 109.22 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61563110-c32f-4192-a738-0deed262b13f")
+	)
+	(wire
+		(pts
+			(xy 76.2 58.42) (xy 74.93 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63db747c-2b9f-4edf-9c4b-b61463e8674d")
+	)
+	(wire
+		(pts
+			(xy 193.04 110.49) (xy 165.1 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6499fea3-438e-49af-b848-f984f72ffbca")
+	)
+	(wire
+		(pts
+			(xy 187.96 59.69) (xy 187.96 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "666b0348-2fc1-4155-9ebd-05542be72f5e")
+	)
+	(wire
+		(pts
+			(xy 81.28 48.26) (xy 81.28 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "670978fc-9d3a-4be5-984c-8935875b3706")
+	)
+	(wire
+		(pts
+			(xy 160.02 139.7) (xy 158.75 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6792c7d3-4b71-4e77-aebf-d52cc0d72f2e")
+	)
+	(wire
+		(pts
+			(xy 187.96 58.42) (xy 186.69 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c21270-c14b-4a15-a008-f17511ad6171")
+	)
+	(wire
+		(pts
+			(xy 186.69 58.42) (xy 186.69 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67fbdb22-934b-4db6-8f93-b3ff3d3f40df")
+	)
+	(wire
+		(pts
+			(xy 165.1 149.86) (xy 137.16 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68107805-b95f-4cf7-91e0-ef710a3565df")
+	)
+	(wire
+		(pts
+			(xy 133.35 97.79) (xy 133.35 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69611285-481c-4ce8-a793-be0156d6c171")
+	)
+	(wire
+		(pts
+			(xy 193.04 68.58) (xy 193.04 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b60d33d-61a2-45e2-b6ff-f7dbca525e23")
+	)
+	(wire
+		(pts
+			(xy 132.08 140.97) (xy 132.08 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ba221f8-7ac7-4c01-acbb-05b51bba3061")
+	)
+	(wire
+		(pts
+			(xy 158.75 129.54) (xy 158.75 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c69ca2b-7c53-45f6-9eb5-692659a19958")
+	)
+	(wire
+		(pts
+			(xy 130.81 58.42) (xy 130.81 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d98bf9f-a5c7-4095-bf7e-862b897c1320")
+	)
+	(wire
+		(pts
+			(xy 74.93 88.9) (xy 74.93 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "704caa99-f547-4205-9fb9-9b1264c05d75")
+	)
+	(wire
+		(pts
+			(xy 133.35 99.06) (xy 132.08 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70650413-fa3d-4fab-b13e-8e3657fb1ef1")
+	)
+	(wire
+		(pts
+			(xy 109.22 68.58) (xy 109.22 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "708a538c-13f0-41a7-b034-06902053d667")
+	)
+	(wire
+		(pts
+			(xy 203.2 110.49) (xy 193.04 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76e71e9e-3788-4e7f-8f9c-94cc05af8012")
+	)
+	(wire
+		(pts
+			(xy 77.47 129.54) (xy 77.47 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77d266a0-b376-42b3-a372-f3222503bc88")
+	)
+	(wire
+		(pts
+			(xy 165.1 110.49) (xy 137.16 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "785bd20b-5be2-4c0d-ace5-ed4245b083fa")
+	)
+	(wire
+		(pts
+			(xy 109.22 149.86) (xy 81.28 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79a7a25a-7adb-4ad4-acc4-6d5cf191ec6a")
+	)
+	(wire
+		(pts
+			(xy 105.41 129.54) (xy 105.41 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b21594d-8ec1-4d72-bf56-71333c113cc4")
+	)
+	(wire
+		(pts
+			(xy 77.47 97.79) (xy 77.47 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7df440fd-c840-4a54-932b-c44c4ed39f79")
+	)
+	(wire
+		(pts
+			(xy 76.2 139.7) (xy 74.93 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f58ec32-ead4-4b64-b0d7-5c199164d6a0")
+	)
+	(wire
+		(pts
+			(xy 160.02 100.33) (xy 160.02 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80131942-5490-4c4c-85e9-409b089cc956")
+	)
+	(wire
+		(pts
+			(xy 132.08 139.7) (xy 130.81 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8062b619-36a7-4e46-b8a8-de3184b9e645")
+	)
+	(wire
+		(pts
+			(xy 133.35 88.9) (xy 133.35 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84f7cdf2-5395-4192-b474-cca49e8321b1")
+	)
+	(wire
+		(pts
+			(xy 193.04 149.86) (xy 193.04 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b5ce17d-12ca-476c-be8a-ff3cf7142626")
+	)
+	(wire
+		(pts
+			(xy 161.29 139.7) (xy 160.02 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bf7a2ea-149d-444e-bd25-593d5ffefdb3")
+	)
+	(wire
+		(pts
+			(xy 137.16 110.49) (xy 109.22 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d48cd6a-a8db-4509-81d8-f815b4f57864")
+	)
+	(wire
+		(pts
+			(xy 165.1 149.86) (xy 165.1 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e8fe478-4f8b-4bc7-9611-08cac8e5b3d7")
+	)
+	(wire
+		(pts
+			(xy 109.22 149.86) (xy 109.22 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90e62fcc-1e51-4aa4-9587-09919f437d5b")
+	)
+	(wire
+		(pts
+			(xy 130.81 139.7) (xy 130.81 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91155248-1a96-416f-8508-4c9ed280f388")
+	)
+	(wire
+		(pts
+			(xy 189.23 48.26) (xy 189.23 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91570b52-4dde-46b6-95f6-7563eb17381b")
+	)
+	(wire
+		(pts
+			(xy 160.02 58.42) (xy 158.75 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "929d3f00-91c4-47dc-b354-f644892b1cf5")
+	)
+	(wire
+		(pts
+			(xy 76.2 140.97) (xy 76.2 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "966738cd-71a2-4278-81c9-a32a20c7c91f")
+	)
+	(wire
+		(pts
+			(xy 160.02 59.69) (xy 160.02 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98275b1b-4831-48b1-b683-c6fa2dc15b04")
+	)
+	(wire
+		(pts
+			(xy 105.41 138.43) (xy 105.41 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9965d54e-9ed5-4214-bd9f-9d1f2ca4a4e1")
+	)
+	(wire
+		(pts
+			(xy 161.29 48.26) (xy 161.29 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99bb684b-8c9e-43d5-b7f2-b92cb5b8f6ab")
+	)
+	(wire
+		(pts
+			(xy 189.23 100.33) (xy 189.23 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9ddd4e80-efea-48ee-80d2-6cd15fbdf57b")
+	)
+	(wire
+		(pts
+			(xy 158.75 48.26) (xy 158.75 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e6741b8-7400-4b27-9892-771e9003a3e2")
+	)
+	(wire
+		(pts
+			(xy 161.29 129.54) (xy 161.29 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f110696-06c5-4e30-955b-0caef8a32303")
+	)
+	(wire
+		(pts
+			(xy 161.29 99.06) (xy 160.02 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fd97edf-8bb9-4176-a982-668eec32fa67")
+	)
+	(wire
+		(pts
+			(xy 133.35 138.43) (xy 133.35 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ffc07d-d5c7-46e7-a64e-2120a7bcba97")
+	)
+	(wire
+		(pts
+			(xy 109.22 110.49) (xy 109.22 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5bab669-f070-46d9-a2a7-fcd11a4ccf16")
+	)
+	(wire
+		(pts
+			(xy 102.87 139.7) (xy 102.87 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6bcdf01-28ac-4d7f-9c18-995aef6e3507")
+	)
+	(wire
+		(pts
+			(xy 203.2 68.58) (xy 203.2 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a96f230a-5b7a-446e-877e-c63fb7eff0d9")
+	)
+	(wire
+		(pts
+			(xy 105.41 99.06) (xy 104.14 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9a13a73-2121-452d-b56a-b0b063e3872f")
+	)
+	(wire
+		(pts
+			(xy 203.2 68.58) (xy 193.04 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aafeda9f-3fdd-4783-9d7d-5172f236f8de")
+	)
+	(wire
+		(pts
+			(xy 189.23 88.9) (xy 189.23 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aba4cf77-a0ed-4d53-9f80-3b88cd73104f")
+	)
+	(wire
+		(pts
+			(xy 76.2 99.06) (xy 74.93 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac97326b-dd5b-44c7-aef8-becb4b832864")
+	)
+	(wire
+		(pts
+			(xy 109.22 110.49) (xy 81.28 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad62199d-25b8-4412-8a16-6e15c518fea6")
+	)
+	(wire
+		(pts
+			(xy 165.1 110.49) (xy 165.1 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "add0c412-9637-4e4f-beb0-580dda2243c9")
+	)
+	(wire
+		(pts
+			(xy 189.23 129.54) (xy 189.23 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aff33b4a-478d-4488-addb-dad1317e9eff")
+	)
+	(wire
+		(pts
+			(xy 186.69 129.54) (xy 186.69 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b29d4b13-3059-4168-ba8c-094a994ead4b")
+	)
+	(wire
+		(pts
+			(xy 187.96 139.7) (xy 186.69 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3e30e36-f1bf-460d-96af-dddb7892c526")
+	)
+	(wire
+		(pts
+			(xy 203.2 154.94) (xy 203.2 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4d5a93c-914b-49b1-aca8-4b01333ad2b1")
+	)
+	(wire
+		(pts
+			(xy 74.93 58.42) (xy 74.93 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b739e88d-185f-47a9-9af5-2b993a078cd9")
+	)
+	(wire
+		(pts
+			(xy 77.47 139.7) (xy 76.2 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb3c49f8-2da5-4490-b80c-8494a11717a8")
+	)
+	(wire
+		(pts
+			(xy 81.28 129.54) (xy 81.28 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2a4601c-cfa5-4fb6-a0ce-cf3f843206bc")
+	)
+	(wire
+		(pts
+			(xy 165.1 68.58) (xy 137.16 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c465ce6d-fbaf-45ee-b800-848a817bc978")
+	)
+	(wire
+		(pts
+			(xy 203.2 149.86) (xy 203.2 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c479d870-abe5-4972-9a83-29bc94d466e5")
+	)
+	(wire
+		(pts
+			(xy 133.35 139.7) (xy 132.08 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc3baf51-7eee-4cb3-a9b2-d218e467a234")
+	)
+	(wire
+		(pts
+			(xy 109.22 88.9) (xy 109.22 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceb109e2-8a38-4c43-b1b2-c401ecbee751")
+	)
+	(wire
+		(pts
+			(xy 104.14 58.42) (xy 102.87 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf4ffc65-5a06-4c93-b228-be0ed569cc3a")
+	)
+	(wire
+		(pts
+			(xy 189.23 139.7) (xy 187.96 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d14b3e27-943d-4b62-8907-88637b5871ec")
+	)
+	(wire
+		(pts
+			(xy 130.81 129.54) (xy 130.81 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3a77761-6f28-4a41-b2f1-e64381dd3d8e")
+	)
+	(wire
+		(pts
+			(xy 132.08 100.33) (xy 132.08 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6511052-ebbc-4b7f-bed9-f71cc82e30db")
+	)
+	(wire
+		(pts
+			(xy 133.35 57.15) (xy 133.35 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9ef05dc-e935-408a-9175-f5ff93d63aaa")
+	)
+	(wire
+		(pts
+			(xy 189.23 138.43) (xy 189.23 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db262309-d2e9-4414-bebd-5b28f2ceb04b")
+	)
+	(wire
+		(pts
+			(xy 203.2 149.86) (xy 193.04 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e30c690a-5c24-4d26-a7dc-8e611ee99d5a")
+	)
+	(wire
+		(pts
+			(xy 77.47 99.06) (xy 76.2 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e384ba00-7c8f-42bb-822e-4401b55ed102")
+	)
+	(wire
+		(pts
+			(xy 77.47 48.26) (xy 77.47 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5f3bc4a-d2af-44c4-bba9-cf76253acf2e")
+	)
+	(wire
+		(pts
+			(xy 102.87 129.54) (xy 102.87 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6179556-6b9b-4dee-b231-6ba80ead8f92")
+	)
+	(wire
+		(pts
+			(xy 193.04 88.9) (xy 193.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7613de5-b695-4722-a9f9-ed1e4447b477")
+	)
+	(wire
+		(pts
+			(xy 104.14 139.7) (xy 102.87 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7d4f632-2dba-448e-801f-de6efbaf86fe")
+	)
+	(wire
+		(pts
+			(xy 102.87 88.9) (xy 102.87 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9846800-a08d-456c-a5fe-71924e4314d8")
+	)
+	(wire
+		(pts
+			(xy 189.23 58.42) (xy 187.96 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec7018ff-747d-4b45-af7a-bc335e342f66")
+	)
+	(wire
+		(pts
+			(xy 81.28 88.9) (xy 81.28 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef10cf47-91ae-42ce-be36-8747d99f15a9")
+	)
+	(wire
+		(pts
+			(xy 77.47 58.42) (xy 76.2 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef92a30d-5357-4c47-97eb-e0ee40596798")
+	)
+	(wire
+		(pts
+			(xy 161.29 57.15) (xy 161.29 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eff898e6-774e-4983-8ef9-1ac3ae4fbaed")
+	)
+	(wire
+		(pts
+			(xy 137.16 68.58) (xy 109.22 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0f86094-4a1e-4ee3-a1b1-fc343e79f5cd")
+	)
+	(wire
+		(pts
+			(xy 130.81 48.26) (xy 130.81 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f17955d6-effb-4680-8c37-f3f4349a1d9f")
+	)
+	(wire
+		(pts
+			(xy 102.87 48.26) (xy 102.87 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f179e116-5914-4a19-a948-ae51b36d3251")
+	)
+	(wire
+		(pts
+			(xy 161.29 88.9) (xy 161.29 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2d55c16-1725-4e37-a0cf-389f0d85d737")
+	)
+	(wire
+		(pts
+			(xy 137.16 68.58) (xy 137.16 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f33c6f7d-4ea4-4c58-bf83-05a38758d337")
+	)
+	(wire
+		(pts
+			(xy 193.04 149.86) (xy 165.1 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f62fc99c-584e-47b5-8e9b-ecd3f2012eef")
+	)
+	(wire
+		(pts
+			(xy 158.75 88.9) (xy 158.75 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f683c405-2d5e-45c6-966b-5a17c3c13494")
+	)
+	(wire
+		(pts
+			(xy 76.2 59.69) (xy 76.2 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7227377-f5bd-4d13-a0bb-ff45997124f2")
+	)
+	(wire
+		(pts
+			(xy 77.47 57.15) (xy 77.47 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f835a7d1-2d4c-4583-ba56-eeb2514cb1ee")
+	)
+	(wire
+		(pts
+			(xy 109.22 68.58) (xy 81.28 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbe4938e-29ca-4512-a480-d067a39d6bf7")
+	)
+	(wire
+		(pts
+			(xy 137.16 110.49) (xy 137.16 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcf06eb8-9de4-4f4e-8312-f6f09ac79aa6")
+	)
+	(wire
+		(pts
+			(xy 81.28 110.49) (xy 81.28 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe35ca93-ea07-4e9e-a3e7-1ee53c4e9629")
+	)
+	(wire
+		(pts
+			(xy 137.16 88.9) (xy 137.16 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff036d4e-f7f4-4d87-b9d2-32bcbbb21472")
+	)
+	(hierarchical_label "CS2_17"
+		(shape input)
+		(at 132.08 100.33 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "036a21ec-5170-457d-9edc-1d51b5d28c44")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 203.2 154.94 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "10b27abb-084b-490a-b049-093b75004585")
+	)
+	(hierarchical_label "2_SW11"
+		(shape input)
+		(at 186.69 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "17788032-aeb5-4be5-8cb4-7e787cd4691e")
+	)
+	(hierarchical_label "MATIAS_GND_12"
+		(shape input)
+		(at 165.1 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "188939fe-3a9c-45a0-ba94-d0e2ece8630f")
+	)
+	(hierarchical_label "2_SW10"
+		(shape input)
+		(at 189.23 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1ac0068a-b875-4626-8d51-a7a0404be149")
+	)
+	(hierarchical_label "2_SW11"
+		(shape input)
+		(at 189.23 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "211417a9-024b-44d2-80a8-5ec412810f99")
+	)
+	(hierarchical_label "2_SW4"
+		(shape input)
+		(at 133.35 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "250253a8-8b6e-48c9-94ed-f26b3ed2e5c5")
+	)
+	(hierarchical_label "2_SW2"
+		(shape input)
+		(at 158.75 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c81bd32-0fcf-4f68-9a2b-7343016a5c54")
+	)
+	(hierarchical_label "2_SW5"
+		(shape input)
+		(at 105.41 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c851746-8790-4761-9150-7402f93ed38f")
+	)
+	(hierarchical_label "MATIAS_GND_1"
+		(shape input)
+		(at 193.04 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2dd85449-aaa5-4e3b-9be0-60f8bbe1ecff")
+	)
+	(hierarchical_label "CS2_17"
+		(shape input)
+		(at 104.14 100.33 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2f8863c9-1961-477a-91a4-f2a44c392df0")
+	)
+	(hierarchical_label "CS2_16"
+		(shape input)
+		(at 187.96 140.97 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4196e295-c30d-4e36-a5fe-e63c10fabd37")
+	)
+	(hierarchical_label "2_SW8"
+		(shape input)
+		(at 74.93 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "442592fb-0934-4fb9-b3c4-1d90d9faaba6")
+	)
+	(hierarchical_label "CS2_18"
+		(shape input)
+		(at 76.2 59.69 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "487ad86f-1bed-4a00-8648-f95dc4bc8c67")
+	)
+	(hierarchical_label "MATIAS_GND_8"
+		(shape input)
+		(at 109.22 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "56bdb53d-3bc1-4206-9c60-fc3cce19d9be")
+	)
+	(hierarchical_label "MATIAS_GND_13"
+		(shape input)
+		(at 137.16 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "58719aec-a414-4dde-ae90-f40e6a7c50d5")
+	)
+	(hierarchical_label "2_SW7"
+		(shape input)
+		(at 102.87 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6386507e-9c59-48cf-8d69-7be7ff5d172c")
+	)
+	(hierarchical_label "2_SW8"
+		(shape input)
+		(at 102.87 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6685d6af-2135-468b-bdb0-4d5260fecb19")
+	)
+	(hierarchical_label "MATIAS_GND_5"
+		(shape input)
+		(at 137.16 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6b1744b6-61bb-4b6e-acc5-bde302914e66")
+	)
+	(hierarchical_label "MATIAS_GND_11"
+		(shape input)
+		(at 193.04 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "738f8953-b3e8-4ffd-9e92-2adadc120274")
+	)
+	(hierarchical_label "2_SW8"
+		(shape input)
+		(at 77.47 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7ae9e790-7491-47d6-8d01-9694fae308d5")
+	)
+	(hierarchical_label "2_SW5"
+		(shape input)
+		(at 133.35 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7b6b04cf-3abc-450d-b1a0-9247656ccda1")
+	)
+	(hierarchical_label "MATIAS_GND_14"
+		(shape input)
+		(at 109.22 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7c59f0b3-2874-4e2b-a0c8-9fdb46974871")
+	)
+	(hierarchical_label "MATIAS_GND_6"
+		(shape input)
+		(at 137.16 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7f2ca741-cb89-4fad-9ffb-9a9e9882b0f3")
+	)
+	(hierarchical_label "MATIAS_GND_4"
+		(shape input)
+		(at 165.1 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8559efb4-7602-4359-9c54-4ff0ef068339")
+	)
+	(hierarchical_label "2_SW6"
+		(shape input)
+		(at 130.81 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "864dbf0c-60af-4414-85c9-3abe0d5b156b")
+	)
+	(hierarchical_label "CS2_16"
+		(shape input)
+		(at 76.2 140.97 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "87ce01a5-2b77-4581-b3bc-2e4363e005f1")
+	)
+	(hierarchical_label "2_SW4"
+		(shape input)
+		(at 130.81 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8896e4e4-1b10-440a-b383-412e4bf20ada")
+	)
+	(hierarchical_label "CS2_16"
+		(shape input)
+		(at 160.02 140.97 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "89ef2b74-7196-4928-86f9-6abc0a916298")
+	)
+	(hierarchical_label "MATIAS_GND_7"
+		(shape input)
+		(at 109.22 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8cf26992-d922-4ffd-ba85-f3f4d2e78cd2")
+	)
+	(hierarchical_label "2_SW7"
+		(shape input)
+		(at 77.47 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8f13d846-0f7a-487a-894d-8b87c7c1f4c6")
+	)
+	(hierarchical_label "2_SW4"
+		(shape input)
+		(at 158.75 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92faf445-ac3e-40d1-b487-e13dbc2b7582")
+	)
+	(hierarchical_label "2_SW1"
+		(shape input)
+		(at 186.69 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "98d42a03-d757-4108-8d14-128802fbc5e4")
+	)
+	(hierarchical_label "CS2_18"
+		(shape input)
+		(at 104.14 59.69 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9dfd20df-a144-4d8a-aa90-feec825daddb")
+	)
+	(hierarchical_label "2_SW9"
+		(shape input)
+		(at 77.47 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a72ab6e8-d4aa-41a2-8d62-8b59ecd49f2b")
+	)
+	(hierarchical_label "2_SW6"
+		(shape input)
+		(at 102.87 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a8c55ae2-e792-47eb-bbd1-066262dd958f")
+	)
+	(hierarchical_label "CS2_18"
+		(shape input)
+		(at 132.08 59.69 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ad5b6246-a9cd-4f39-9763-bf7d41412b8b")
+	)
+	(hierarchical_label "2_SW3"
+		(shape input)
+		(at 133.35 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b273c45f-6047-404b-adc3-4976278e7d23")
+	)
+	(hierarchical_label "2_SW2"
+		(shape input)
+		(at 161.29 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b90a1332-225d-4b6c-befd-a187e02cc780")
+	)
+	(hierarchical_label "MATIAS_GND_2"
+		(shape input)
+		(at 193.04 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bd1235be-a8a8-4f57-9aa2-ee09eb3b3790")
+	)
+	(hierarchical_label "2_SW10"
+		(shape input)
+		(at 74.93 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c00a95dc-82b3-46a2-bb91-82cc04ba7bb0")
+	)
+	(hierarchical_label "CS2_16"
+		(shape input)
+		(at 189.23 100.33 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cb8abc9e-e9b2-4334-b81f-4291141b14b9")
+	)
+	(hierarchical_label "CS2_17"
+		(shape input)
+		(at 160.02 100.33 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ccb9237b-79fd-4082-af1b-1379f3dc700d")
+	)
+	(hierarchical_label "CS2_17"
+		(shape input)
+		(at 186.69 100.33 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cf673809-312c-4b55-96e2-9c2ed1dcf72a")
+	)
+	(hierarchical_label "2_SW2"
+		(shape input)
+		(at 186.69 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2b1bfcb-9526-487e-8e20-d449ff775a8e")
+	)
+	(hierarchical_label "2_SW5"
+		(shape input)
+		(at 130.81 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d808c17f-4d96-4512-941d-bfbf41a9a4da")
+	)
+	(hierarchical_label "2_SW1"
+		(shape input)
+		(at 161.29 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db5021fb-b24b-4bd3-b5b2-98871b4c2cf7")
+	)
+	(hierarchical_label "2_SW3"
+		(shape input)
+		(at 158.75 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "df13fbac-3c92-4c4d-973d-2c3eadc74320")
+	)
+	(hierarchical_label "2_SW6"
+		(shape input)
+		(at 105.41 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e2f38ce9-b7b5-4196-92a2-5c24708ef722")
+	)
+	(hierarchical_label "CS2_17"
+		(shape input)
+		(at 76.2 100.33 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3f38b8a-3e79-45b4-909f-f9504e0dd1f0")
+	)
+	(hierarchical_label "MATIAS_GND_15"
+		(shape input)
+		(at 81.28 48.26 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e6761cb7-a9af-4886-9d1f-74d0c9698231")
+	)
+	(hierarchical_label "2_SW9"
+		(shape input)
+		(at 74.93 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e765bc5f-454b-4f40-b566-bf4a1ea3a97a")
+	)
+	(hierarchical_label "CS2_16"
+		(shape input)
+		(at 132.08 140.97 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7b4e0cf-125f-456f-8157-ddc0acc9290f")
+	)
+	(hierarchical_label "2_SW3"
+		(shape input)
+		(at 161.29 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8420c38-4cd3-40f5-a5b5-1d3995ab0515")
+	)
+	(hierarchical_label "CS2_17"
+		(shape input)
+		(at 187.96 59.69 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ead1ed10-bb8d-44b8-821c-1ca923cb13ad")
+	)
+	(hierarchical_label "2_SW1"
+		(shape input)
+		(at 189.23 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eba60cca-2279-4821-86f8-6ddbb4833d7b")
+	)
+	(hierarchical_label "2_SW7"
+		(shape input)
+		(at 105.41 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f287286b-dcf2-4b3e-9592-8e8a5ac43fe8")
+	)
+	(hierarchical_label "MATIAS_GND_10"
+		(shape input)
+		(at 81.28 88.9 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f3dde35d-70bf-4563-bf98-53bec3e90da4")
+	)
+	(hierarchical_label "CS2_16"
+		(shape input)
+		(at 104.14 140.97 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f8433ab8-01ea-4b07-91ab-0c498f0c8ade")
+	)
+	(hierarchical_label "MATIAS_GND_3"
+		(shape input)
+		(at 165.1 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc29b647-b59e-4ef5-8388-e9131e579731")
+	)
+	(hierarchical_label "MATIAS_GND_9"
+		(shape input)
+		(at 81.28 129.54 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fce481b4-5fc5-4e2c-a028-1e2c5354ebeb")
+	)
+	(hierarchical_label "CS2_18"
+		(shape input)
+		(at 160.02 59.69 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ffc72855-38a7-48bc-8082-a4219afe99e5")
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 166.37 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "124a2af4-dda6-4642-883c-a8f86fa62680")
+		(property "Reference" "SW3"
+			(at 157.48 135.8901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 157.48 133.3501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 166.37 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 166.37 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 166.37 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 166.37 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 166.37 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09d03617-a7b9-427a-867d-f80fe774ec67")
+		)
+		(pin "2"
+			(uuid "52abc759-4547-4591-aa03-42ce8f9c4e93")
+		)
+		(pin "3"
+			(uuid "6245a950-ea64-4dde-9eb2-9289b9a6a7e5")
+		)
+		(pin "4"
+			(uuid "eb9e93c1-55ed-4790-82e2-b63ceae97d69")
+		)
+		(pin "5"
+			(uuid "5ca97994-2187-41ae-b895-68ac63924477")
+		)
+		(pin "6"
+			(uuid "617cd4a3-8496-478f-b1d5-75fe99651ae5")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 82.55 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44491f9f-6062-4a49-a086-2be3950073ef")
+		(property "Reference" "SW15"
+			(at 73.66 54.6101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 73.66 52.0701 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 82.55 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 82.55 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 82.55 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 82.55 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 82.55 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b0d43ec-82e1-42d3-9d8f-7c8f35b13b08")
+		)
+		(pin "2"
+			(uuid "62f3f21a-3d3f-431b-9350-d77d9907887b")
+		)
+		(pin "4"
+			(uuid "38f6f629-5be0-4f61-91d3-8dae565ea951")
+		)
+		(pin "3"
+			(uuid "040ccd28-30a2-4d1d-a56c-d0e055ac421a")
+		)
+		(pin "5"
+			(uuid "675e2812-4600-4ea3-ba42-d17d9b422642")
+		)
+		(pin "6"
+			(uuid "97221382-abac-492a-aa85-dd87118ac9be")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 166.37 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59948791-1154-446b-a8d4-56da33cdb629")
+		(property "Reference" "SW12"
+			(at 157.48 54.6101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 157.48 52.0701 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 166.37 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 166.37 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 166.37 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6040e6a9-0c24-4828-802f-07061800b5f9")
+		)
+		(pin "2"
+			(uuid "6b960108-c1a9-4796-bf1b-8c7a132952ed")
+		)
+		(pin "3"
+			(uuid "5197c5c3-af4e-4ac8-b9d8-bf1e6a78b95f")
+		)
+		(pin "4"
+			(uuid "fc6719bb-7fdf-42e6-b1c9-84969d2a7da7")
+		)
+		(pin "5"
+			(uuid "481925ec-1766-4783-af5e-5618bef8d1cb")
+		)
+		(pin "6"
+			(uuid "3b6ad3e8-d4ab-493f-96a4-0a30a82ad4c0")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 194.31 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69533444-f300-4cd0-baca-8792399596ef")
+		(property "Reference" "SW2"
+			(at 185.42 95.2501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 185.42 92.7101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 194.31 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 194.31 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 194.31 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 194.31 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 194.31 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27a09c47-8536-42b5-a96a-7da0ed8bfca9")
+		)
+		(pin "2"
+			(uuid "667b806b-a573-4a39-8ce9-0f0b1e7b485f")
+		)
+		(pin "3"
+			(uuid "6a19789a-f580-4903-bc88-7d7b4ede839c")
+		)
+		(pin "4"
+			(uuid "29f6952e-2736-4717-9021-edf38c890a19")
+		)
+		(pin "6"
+			(uuid "919a81aa-4ca9-435a-9741-d28ec196d136")
+		)
+		(pin "5"
+			(uuid "fbf72eb8-6b4e-4e08-a262-330a0a0fafdc")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 110.49 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71ee2115-eda1-4366-8189-d731421ced49")
+		(property "Reference" "SW7"
+			(at 101.6 135.8901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 101.6 133.3501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 110.49 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 110.49 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 110.49 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 110.49 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 110.49 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "014c13fc-1c68-4835-9323-5785c3a24e5c")
+		)
+		(pin "2"
+			(uuid "63f3d17a-d6de-44b6-9fd6-c96ee795d2bc")
+		)
+		(pin "4"
+			(uuid "e9861220-919a-4899-81f1-16076443f915")
+		)
+		(pin "3"
+			(uuid "918e9468-d2f6-4f51-bfe1-68cd004b30cd")
+		)
+		(pin "6"
+			(uuid "db36b920-cd5b-4219-be27-80865694f105")
+		)
+		(pin "5"
+			(uuid "43bd8ab5-a03b-42f7-8f86-8e0ab286edc1")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 138.43 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81088d74-0006-46fa-ae00-500907acb093")
+		(property "Reference" "SW6"
+			(at 129.54 95.2501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 129.54 92.7101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 138.43 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 138.43 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 138.43 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 138.43 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 138.43 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "686ac102-6c02-4b8d-ae0e-b59a9372d955")
+		)
+		(pin "2"
+			(uuid "ba97378b-9800-4476-b2d6-ab2d5e78e494")
+		)
+		(pin "3"
+			(uuid "3e710572-9560-4ae0-aadb-96455b25fa95")
+		)
+		(pin "4"
+			(uuid "f0764fd4-40c0-4884-9ffa-3cfbb2f4396f")
+		)
+		(pin "6"
+			(uuid "59ec6d0c-1dd9-4414-b34a-de931fd7efb0")
+		)
+		(pin "5"
+			(uuid "ca7e1bc0-e9fa-4600-8470-47e14d009d61")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 194.31 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81733f86-ca4f-42c5-941e-1d61dac6c608")
+		(property "Reference" "SW11"
+			(at 185.42 54.6101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 185.42 52.0701 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 194.31 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 194.31 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 194.31 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 194.31 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef9c5f7a-63c1-40b3-bf22-f48ab79fedb2")
+		)
+		(pin "2"
+			(uuid "e6ec1fe0-d02c-46fe-9567-0d6fd3b17f45")
+		)
+		(pin "4"
+			(uuid "7b890f9d-ec05-411a-9137-aa7c6894d887")
+		)
+		(pin "3"
+			(uuid "656b0631-0285-43cd-8efa-e07b70856d66")
+		)
+		(pin "5"
+			(uuid "2c81af69-1396-47b9-b43d-83e30a8216a3")
+		)
+		(pin "6"
+			(uuid "2b91df16-cc83-46ff-b36e-30b844f6334a")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 138.43 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9b7b858a-50db-4ecf-960b-2a791186f409")
+		(property "Reference" "SW13"
+			(at 129.54 54.6101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 129.54 52.0701 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 138.43 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 138.43 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 138.43 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 138.43 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 138.43 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d461b95-e5fa-482d-b01f-9bf5d4af676e")
+		)
+		(pin "2"
+			(uuid "e8e045ec-b977-478b-bbaa-42c5062bcf0c")
+		)
+		(pin "3"
+			(uuid "f8cfbd9c-8120-43f4-b9c2-83a522c8cb15")
+		)
+		(pin "4"
+			(uuid "d088b029-2837-4858-babe-2916006eba5a")
+		)
+		(pin "5"
+			(uuid "114fa2be-3cfa-4d55-a3f8-dec252fa5e7e")
+		)
+		(pin "6"
+			(uuid "e74d2177-f6c5-41af-8d19-4470d3784be0")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 110.49 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a849b02b-4d0c-482b-895b-07230d67508f")
+		(property "Reference" "SW14"
+			(at 101.6 54.6101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 101.6 52.0701 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 110.49 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 110.49 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 110.49 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 110.49 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 110.49 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "27af14bd-c92e-463f-b908-b9d8a76a07c8")
+		)
+		(pin "2"
+			(uuid "1e0929c0-1b4e-4d0e-ad1d-55573737e328")
+		)
+		(pin "3"
+			(uuid "b9877727-0f57-4fe4-8aa2-7df52457628b")
+		)
+		(pin "4"
+			(uuid "c246c440-d2c1-4d87-9ad8-8524087e2ae1")
+		)
+		(pin "6"
+			(uuid "3236007f-3fa9-42ca-9cf6-6648d9fc3ae2")
+		)
+		(pin "5"
+			(uuid "3aa1c391-ceca-4f66-a36f-b4135339c8ad")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 194.31 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b516e6ab-0b1b-4f30-96af-ed0988e66190")
+		(property "Reference" "SW1"
+			(at 185.42 135.8901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 185.42 133.3501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 194.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 194.31 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 194.31 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 194.31 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 194.31 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6101baf6-53cf-4e23-b93d-3094fb52c930")
+		)
+		(pin "2"
+			(uuid "9478b4ba-caa2-4b9f-888e-9d5cd1dfdc2b")
+		)
+		(pin "3"
+			(uuid "5989342d-e63f-4098-8f55-9f9129de74bd")
+		)
+		(pin "4"
+			(uuid "be361981-6978-4018-b066-8e7edcf2805b")
+		)
+		(pin "5"
+			(uuid "60a98b4b-e78b-445a-bbbf-54c2161724ba")
+		)
+		(pin "6"
+			(uuid "20d6da19-e792-46a0-8d72-177eff82af0d")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 110.49 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bbb377a0-4f64-47be-b66c-ba2f7f1cd6ad")
+		(property "Reference" "SW8"
+			(at 101.6 95.2501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 101.6 92.7101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 110.49 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 110.49 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 110.49 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 110.49 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 110.49 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43e982e4-073b-41aa-a1da-9146de6df287")
+		)
+		(pin "2"
+			(uuid "5d10bedb-d983-4e57-9113-ad186fb01ced")
+		)
+		(pin "4"
+			(uuid "b6853ecc-2305-4590-b19a-ae59360abb48")
+		)
+		(pin "3"
+			(uuid "5e4150eb-e700-47a0-af84-903043ffd9a0")
+		)
+		(pin "6"
+			(uuid "e0348021-5a85-4a60-8f1c-1620c3b29686")
+		)
+		(pin "5"
+			(uuid "d56b4181-4b17-42fc-83f0-cf29247dce4a")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 82.55 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4559066-2233-46d0-8351-32001c94bb53")
+		(property "Reference" "SW10"
+			(at 73.66 95.2501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 73.66 92.7101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 82.55 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 82.55 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 82.55 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 82.55 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 82.55 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "852fd885-e43e-489c-88a4-f1dbecd40fa7")
+		)
+		(pin "2"
+			(uuid "7271d5fc-94e7-467c-8530-9ec450f4e0fb")
+		)
+		(pin "3"
+			(uuid "4eaca8a7-1414-41a4-b1a3-01dfaedf5977")
+		)
+		(pin "4"
+			(uuid "86515407-6023-40cd-bfe8-9e641d041f7b")
+		)
+		(pin "6"
+			(uuid "bcade5af-2dff-48c4-bb2c-d81f5a03c443")
+		)
+		(pin "5"
+			(uuid "707e45f1-cedc-4ce8-a172-8bd58ffb7350")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 138.43 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce71ab42-4c41-43a2-b288-5a28122cab41")
+		(property "Reference" "SW5"
+			(at 129.54 135.8901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 129.54 133.3501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 138.43 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 138.43 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 138.43 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 138.43 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 138.43 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e33e7757-6584-4a47-95d2-9e3ea879313e")
+		)
+		(pin "2"
+			(uuid "1ddce440-eeed-4be6-8ea2-7856d9e8bae3")
+		)
+		(pin "4"
+			(uuid "134476b6-ebd2-46af-90ac-c0f8ff8a73b8")
+		)
+		(pin "3"
+			(uuid "5b865c59-14ff-4d3a-bee1-8c48cd7f1d63")
+		)
+		(pin "6"
+			(uuid "3a0ed9bb-290d-415e-86a1-6d4f77915c10")
+		)
+		(pin "5"
+			(uuid "416ad325-c7bf-4255-9ec9-a53c7831f0d0")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 166.37 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1fff0ea-424c-40c3-9862-8a53c48b11fb")
+		(property "Reference" "SW4"
+			(at 157.48 95.2501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 157.48 92.7101 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 166.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 166.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 166.37 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 166.37 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 166.37 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ab8cb0c-19c8-4c5c-849c-8bb354b60793")
+		)
+		(pin "2"
+			(uuid "bbcd4354-cfe5-490d-9ff8-ba02a293ea31")
+		)
+		(pin "3"
+			(uuid "d331f1d7-cb22-45ea-b54c-62842ada85a3")
+		)
+		(pin "4"
+			(uuid "4d5e6041-34e5-4368-a4b3-d13482592ab7")
+		)
+		(pin "6"
+			(uuid "0ba2c9a8-ba95-4021-9f37-167772d75a87")
+		)
+		(pin "5"
+			(uuid "88dbc9e3-0ffb-4166-982d-88bf8e9968a0")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ProEQ:sw_led")
+		(at 82.55 134.62 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edf4eb63-524d-4397-bb67-a8de3c9e782c")
+		(property "Reference" "SW9"
+			(at 73.66 135.8901 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Matias QUIET Click"
+			(at 73.66 133.3501 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "ProEQ:SW_Matias_QC_2LED"
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 82.55 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey REF" ""
+			(at 82.55 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Ref" ""
+			(at 82.55 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" ""
+			(at 82.55 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4d53488-2bf8-4db5-b16b-7507a8e5b80e")
+		)
+		(pin "2"
+			(uuid "bdf4d486-5324-44df-9040-aebdaeddf116")
+		)
+		(pin "3"
+			(uuid "770d78e1-e5bf-45fd-8b9c-8422f9b5a600")
+		)
+		(pin "4"
+			(uuid "5640f92c-e759-4cdc-99b9-42b9dcde311b")
+		)
+		(pin "5"
+			(uuid "5f21c927-ae7c-434c-8fc7-e0fdc605024f")
+		)
+		(pin "6"
+			(uuid "50afdc4f-4c0a-4af1-a6f3-44222d67e0c3")
+		)
+		(instances
+			(project "ProjectEQ"
+				(path "/d97677b2-ca69-4240-b1c2-7f7400271bc2/8aaa1310-4ae2-4f61-bb9a-dd4aacb1cf19"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "libCarteFille")(type "KiCad")(uri "${KIPRJMOD}/libCarteFille.pretty")(options "")(descr "protoboard daughter card"))
+  (lib (name "ProEQ")(type "KiCad")(uri "${KIPRJMOD}/../../../libraries/footprints/ProEQ.pretty")(options "")(descr "shared ProEQ footprints"))
+)

@@ -1,52 +1,40 @@
-# ProEQ — what stays out of git (and why)
-# Policy "Tier A": KiCad sources + BOM + small CAD deliverables are tracked.
-# Fabrication outputs and heavy 3D data ship as GitHub Release assets instead.
+# What stays out of git, and why
 
-# --- OS / editor debris --------------------------------------------------
+Policy: KiCad sources, shared libraries, manufacturing data and CAD sources are
+tracked. Order packages, heavy 3D exports and reference material are not.
+
+## OS / editor debris
+
 Thumbs.db
 .DS_Store
 
-# KiCad local UI state: window geometry, visible layers, zoom, last plot dir.
-# Decision: ignored. Pure per-machine noise, changes on every pan and zoom.
-*.kicad_prl
+## KiCad per-machine state
 
-# --- KiCad transients, autosaves and backup trees ------------------------
+These change on every pan, zoom or save and carry no design information.
+
+*.kicad_prl
+fp-info-cache
 _autosave-*
 *-backups/
-ProjectEQ-backups/
-fp-info-cache
 .history*
 
-# --- fabrication outputs (Release assets) --------------------------------
-# Gerber/drill plots, JLC/PCBWay packages, CPL + position files, IPC netlist.
-Gerber/
-Gerber V1 old/
-jlcpcb/
-production/
-PLOTS/
-plots/
-*.zip
-# full duplicate of the main board inside the laser-cut folder (19 MB)
-SVG for cut/ProjectEQ.kicad_pcb
+## Local-only material, kept on disk but deliberately not published
 
-# --- heavy CAD (Release assets) ------------------------------------------
-ProjectEQ.step
-ProjectEQ_V2.pcb3d
-Board_render.blend
+datasheets/
+private/
+
+## Reference output that is regenerated, not authored
+
+manufacturing/**/*.zip
+manufacturing/gerbers/
+manufacturing/jlcpcb/
+manufacturing/production/
+
+## Heavy 3D: regenerable from the PCB or published as release assets
+
 *.blend
 *.blend1
+*.pcb3d
 *.FCBak
 *.stl
-VLP model + ring/step/
-VLP model + ring/VLP Vu/*.step
-
-# --- stale duplicates of the same design ---------------------------------
-ProjectEQ-backup.*
-ProjectEQ_backup.kicad_pcb
-ProjectEQ_backup.kicad_pro
-*rearrangeled*
-*.bak
-
-# --- private notes, not project material ---------------------------------
-# Personal diary, no technical content. Kept on disk, deliberately not published.
-board installation timeline
+mechanical/*-cut.step

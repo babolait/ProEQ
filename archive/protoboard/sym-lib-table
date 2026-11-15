@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ProEQ")(type "KiCad")(uri "${KIPRJMOD}/../../libraries/symbols/ProEQ.kicad_sym")(options "")(descr "shared ProEQ symbols"))
+  (lib (name "PROEQ")(type "KiCad")(uri "${KIPRJMOD}/PROEQ.kicad_sym")(options "")(descr "protoboard-only symbols"))
+)
